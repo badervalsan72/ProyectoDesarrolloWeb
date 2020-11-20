@@ -1,0 +1,3003 @@
+
+
+      html {
+        height: 100%;
+        width: 100%;
+      }
+
+      body {
+        font-family: 'Open Sans', serif;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        -webkit-font-smoothing: antialiased;
+        overflow: -moz-scrollbars-none;
+        -ms-overflow-style: none;
+      }
+
+      
+        @font-face {
+          font-family: productsans_bold;
+          src: url(assets/ProductSans-Bold.ttf);
+        }
+        
+        @font-face {
+          font-family: productsansmedium_regular;
+          src: url(assets/ProductSans-Medium.ttf);
+        }
+        
+
+      .dulce {
+
+      display: block;
+      position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      overflow-x: auto;
+      overflow-y: auto;
+      background-color: rgba(255, 255, 255, 1);
+      width: 1920.00px;
+    height: 1080.00px;
+    left: 0px;
+    top: 0px;
+
+}
+
+.dulce .panaderia {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      background-color: rgba(255, 255, 255, 0);
+      text-align: left;
+      letter-spacing: 0.72px;
+      color: rgba(204, 204, 204, 1);
+      -webkit-text-stroke: 1.00px rgba(0, 0, 0, 0);
+      font-size: 45.00px;
+      font-weight: 700;
+    font-style: normal;
+      font-family: productsans_bold, Arial;
+      text-decoration: none;
+      box-shadow: none;
+      overflow-x: unset;
+      overflow-y: unset;
+      white-space: pre;
+      width: 211.00px;
+    height: 54.00px;
+    left: 64.00px;
+    top: 37.00px;
+
+}
+
+.dulce .panaderia .panaderia-0 {
+    color: rgba(239, 130, 22, 1);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 45.00px;
+    font-family: productsans_bold, Arial;
+    letter-spacing: 0.72;
+    text-decoration: none;
+}
+
+.dulce .panaderia .panaderia-4 {
+    color: rgba(204, 204, 204, 1);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 45.00px;
+    font-family: productsans_bold, Arial;
+    letter-spacing: 0.72;
+    text-decoration: none;
+}
+
+.dulce .dulce25ef8abd {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      background-color: rgba(255, 255, 255, 0);
+      text-align: left;
+      letter-spacing: 0.43px;
+      color: rgba(239, 130, 22, 1);
+      -webkit-text-stroke: 1.00px rgba(0, 0, 0, 0);
+      font-size: 27.00px;
+      font-weight: 400;
+    font-style: normal;
+      font-family: productsansmedium_regular, Arial;
+      text-decoration: none;
+      box-shadow: none;
+      overflow-x: unset;
+      overflow-y: unset;
+      white-space: pre;
+      width: 71.00px;
+    height: 33.00px;
+    left: 1278.00px;
+    top: 48.00px;
+
+}
+
+.dulce .inicio {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      background-color: rgba(255, 255, 255, 0);
+      text-align: left;
+      letter-spacing: 0.43px;
+      color: rgba(204, 204, 204, 1);
+      -webkit-text-stroke: 1.00px rgba(0, 0, 0, 0);
+      font-size: 27.00px;
+      font-weight: 400;
+    font-style: normal;
+      font-family: productsansmedium_regular, Arial;
+      text-decoration: none;
+      box-shadow: none;
+      overflow-x: unset;
+      overflow-y: unset;
+      white-space: pre;
+      width: 67.00px;
+    height: 33.00px;
+    left: 1150.00px;
+    top: 48.00px;
+
+}
+
+.dulce .rectangle36 {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      background-color: rgba(239, 130, 22, 1);
+      border-bottom-color: rgba(112, 112, 112, 1);
+      border-bottom-style: none;
+      border-bottom-width: 1.00px;
+      border-left-color: rgba(112, 112, 112, 1);
+      border-left-style: none;
+      border-left-width: 1.00px;
+      border-right-color: rgba(112, 112, 112, 1);
+      border-right-style: none;
+      border-right-width: 1.00px;
+      border-top-color: rgba(112, 112, 112, 1);
+      border-top-style: none;
+      border-top-width: 1.00px;
+      border-top-left-radius: 0.00px;
+      border-top-right-radius: 0.00px;
+      border-bottom-left-radius: 0.00px;
+      border-bottom-right-radius: 0.00px;
+      -webkit-filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.1607843137254902));
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.1607843137254902));
+      width: 186.00px;
+    height: 56.00px;
+    left: 1499.00px;
+    top: 37.00px;
+
+}
+
+.dulce .iniciarSesion {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      background-color: rgba(255, 255, 255, 0);
+      text-align: center;
+      letter-spacing: 0.43px;
+      color: rgba(255, 255, 255, 1);
+      -webkit-text-stroke: 1.00px rgba(0, 0, 0, 0);
+      font-size: 27.00px;
+      font-weight: 400;
+    font-style: normal;
+      font-family: productsansmedium_regular, Arial;
+      text-decoration: none;
+      box-shadow: none;
+      overflow-x: unset;
+      overflow-y: unset;
+      white-space: pre;
+      width: 164.00px;
+    height: 33.00px;
+    left: 1510.00px;
+    top: 48.00px;
+
+}
+
+.dulce .salado {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      background-color: rgba(255, 255, 255, 0);
+      text-align: left;
+      letter-spacing: 0.43px;
+      color: rgba(204, 204, 204, 1);
+      -webkit-text-stroke: 1.00px rgba(0, 0, 0, 0);
+      font-size: 27.00px;
+      font-weight: 400;
+    font-style: normal;
+      font-family: productsansmedium_regular, Arial;
+      text-decoration: none;
+      box-shadow: none;
+      overflow-x: unset;
+      overflow-y: unset;
+      white-space: pre;
+      width: 82.00px;
+    height: 33.00px;
+    left: 1384.00px;
+    top: 48.00px;
+
+}
+
+.dulce .cart {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      fill: rgba(204, 204, 204, 1);
+      box-shadow: none;
+      width: 63.62px;
+    height: 50.00px;
+    left: 1716.38px;
+    top: 40.00px;
+
+}
+
+.dulce .line7 {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      stroke: rgba(239, 130, 22, 1);
+          stroke-width: 4.00px;
+          stroke-linecap: round;
+      box-shadow: none;
+      width: 93.00px;
+    height: 4.00px;
+    left: 1266.50px;
+    top: 85.50px;
+
+}
+
+.dulce .horizontalShowcaseSoldOut {
+
+      display: block;
+      position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      overflow-x: unset;
+      overflow-y: unset;
+      background-color: transparent;
+      width: 814.00px;
+    height: 307.00px;
+    left: 968.00px;
+    top: 608.00px;
+
+}
+
+.dulce .horizontalShowcaseSoldOut .rectangle63edd1d407 {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      background-image: url("assets/rectangle63edd1d407.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      background-color: rgba(255, 255, 255, 1);
+      border-bottom-color: rgba(112, 112, 112, 1);
+      border-bottom-style: none;
+      border-bottom-width: 1.00px;
+      border-left-color: rgba(112, 112, 112, 1);
+      border-left-style: none;
+      border-left-width: 1.00px;
+      border-right-color: rgba(112, 112, 112, 1);
+      border-right-style: none;
+      border-right-width: 1.00px;
+      border-top-color: rgba(112, 112, 112, 1);
+      border-top-style: none;
+      border-top-width: 1.00px;
+      border-top-left-radius: 0.00px;
+      border-top-right-radius: 0.00px;
+      border-bottom-left-radius: 0.00px;
+      border-bottom-right-radius: 0.00px;
+      -webkit-filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.1607843137254902));
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.1607843137254902));
+      width: 814.00px;
+    height: 307.00px;
+    left: 0.00px;
+    top: 0.00px;
+
+}
+
+.dulce .horizontalShowcaseSoldOut .download {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      background-image: url("assets/download.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      background-color: rgba(255, 255, 255, 0);
+      border-bottom-color: rgba(112, 112, 112, 1);
+      border-bottom-style: none;
+      border-bottom-width: 1.00px;
+      border-left-color: rgba(112, 112, 112, 1);
+      border-left-style: none;
+      border-left-width: 1.00px;
+      border-right-color: rgba(112, 112, 112, 1);
+      border-right-style: none;
+      border-right-width: 1.00px;
+      border-top-color: rgba(112, 112, 112, 1);
+      border-top-style: none;
+      border-top-width: 1.00px;
+      border-top-left-radius: 0.00px;
+      border-top-right-radius: 0.00px;
+      border-bottom-left-radius: 0.00px;
+      border-bottom-right-radius: 0.00px;
+      box-shadow: none;
+      width: 304.01px;
+    height: 307.00px;
+    left: 0.00px;
+    top: 0.00px;
+
+}
+
+.dulce .horizontalShowcaseSoldOut .group55a65b5d61 {
+
+      display: block;
+      position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      overflow-x: unset;
+      overflow-y: unset;
+      background-color: transparent;
+      width: 465.00px;
+    height: 171.00px;
+    left: 323.82px;
+    top: 21.00px;
+
+}
+
+.dulce .horizontalShowcaseSoldOut .group55a65b5d61 .tiramisu {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      background-color: rgba(255, 255, 255, 0);
+      text-align: left;
+      letter-spacing: 0.40px;
+      color: rgba(0, 0, 0, 1);
+      -webkit-text-stroke: 1.00px rgba(0, 0, 0, 0);
+      font-size: 25.00px;
+      font-weight: 400;
+    font-style: normal;
+      font-family: productsansmedium_regular, Arial;
+      text-decoration: none;
+      box-shadow: none;
+      overflow-x: unset;
+      overflow-y: unset;
+      width: 465.00px;
+    height: 31.00px;
+    left: 0.00px;
+    top: 0.00px;
+
+}
+
+.dulce .horizontalShowcaseSoldOut .group55a65b5d61 .insertarPequenaDescripcionefde7a16 {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 0.4000000059604645;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      background-color: rgba(255, 255, 255, 0);
+      text-align: left;
+      letter-spacing: 0.24px;
+      color: rgba(0, 0, 0, 1);
+      -webkit-text-stroke: 1.00px rgba(0, 0, 0, 0);
+      font-size: 15.00px;
+      font-weight: 400;
+    font-style: normal;
+      font-family: productsansmedium_regular, Arial;
+      text-decoration: none;
+      box-shadow: none;
+      overflow-x: unset;
+      overflow-y: unset;
+      width: 465.00px;
+    height: 83.00px;
+    left: 0.00px;
+    top: 88.00px;
+
+}
+
+.dulce .horizontalShowcaseSoldOut .group55a65b5d61 .group523ade987a {
+
+      display: block;
+      position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      overflow-x: unset;
+      overflow-y: unset;
+      background-color: transparent;
+      width: 99.96px;
+    height: 16.67px;
+    left: 0.00px;
+    top: 44.00px;
+
+}
+
+.dulce .horizontalShowcaseSoldOut .group55a65b5d61 .group523ade987a .icstar24pxe0aca3c8 {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      fill: rgba(239, 130, 22, 1);
+      box-shadow: none;
+      width: 17.37px;
+    height: 16.67px;
+    left: 0.00px;
+    top: 0.00px;
+
+}
+
+.dulce .horizontalShowcaseSoldOut .group55a65b5d61 .group523ade987a .icstar24px248fca61 {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      fill: rgba(239, 130, 22, 1);
+      box-shadow: none;
+      width: 17.37px;
+    height: 16.67px;
+    left: 20.65px;
+    top: 0.00px;
+
+}
+
+.dulce .horizontalShowcaseSoldOut .group55a65b5d61 .group523ade987a .icstar24pxc5c93b96 {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      fill: rgba(239, 130, 22, 1);
+      box-shadow: none;
+      width: 17.37px;
+    height: 16.67px;
+    left: 41.29px;
+    top: 0.00px;
+
+}
+
+.dulce .horizontalShowcaseSoldOut .group55a65b5d61 .group523ade987a .icstar24px5161eccb {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      fill: rgba(239, 130, 22, 1);
+      box-shadow: none;
+      width: 17.37px;
+    height: 16.67px;
+    left: 61.94px;
+    top: 0.00px;
+
+}
+
+.dulce .horizontalShowcaseSoldOut .group55a65b5d61 .group523ade987a .icstar24px8e534c9b {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      fill: rgba(239, 130, 22, 1);
+      box-shadow: none;
+      width: 17.37px;
+    height: 16.67px;
+    left: 82.58px;
+    top: 0.00px;
+
+}
+
+.dulce .horizontalShowcaseSoldOut .group55a65b5d61 .x50b41aa7d6 {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      background-color: rgba(255, 255, 255, 0);
+      text-align: left;
+      letter-spacing: 0.30px;
+      color: rgba(239, 130, 22, 1);
+      -webkit-text-stroke: 1.00px rgba(0, 0, 0, 0);
+      font-size: 19.00px;
+      font-weight: 400;
+    font-style: normal;
+      font-family: productsansmedium_regular, Arial;
+      text-decoration: none;
+      box-shadow: none;
+      overflow-x: unset;
+      overflow-y: unset;
+      white-space: pre;
+      width: 37.00px;
+    height: 23.00px;
+    left: 108.93px;
+    top: 40.00px;
+
+}
+
+.dulce .horizontalShowcaseSoldOut .agotado48777ad3 {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      background-color: rgba(255, 255, 255, 0);
+      text-align: right;
+      letter-spacing: 0.46px;
+      color: rgba(239, 130, 22, 1);
+      -webkit-text-stroke: 1.00px rgba(0, 0, 0, 0);
+      font-size: 29.00px;
+      font-weight: 700;
+    font-style: normal;
+      font-family: productsans_bold, Arial;
+      text-decoration: none;
+      box-shadow: none;
+      overflow-x: unset;
+      overflow-y: unset;
+      white-space: pre;
+      width: 150.00px;
+    height: 35.00px;
+    left: 468.40px;
+    top: 241.00px;
+
+}
+
+.dulce .horizontalShowcaseSoldOut .group54d97318fd {
+
+      display: block;
+      position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      overflow-x: unset;
+      overflow-y: unset;
+      background-color: transparent;
+      width: 151.51px;
+    height: 48.00px;
+    left: 637.73px;
+    top: 231.00px;
+
+}
+
+.dulce .horizontalShowcaseSoldOut .group54d97318fd .rectangle64d21d5c9b {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      background-color: rgba(0, 0, 0, 0.2);
+      border-bottom-color: rgba(112, 112, 112, 1);
+      border-bottom-style: none;
+      border-bottom-width: 1.00px;
+      border-left-color: rgba(112, 112, 112, 1);
+      border-left-style: none;
+      border-left-width: 1.00px;
+      border-right-color: rgba(112, 112, 112, 1);
+      border-right-style: none;
+      border-right-width: 1.00px;
+      border-top-color: rgba(112, 112, 112, 1);
+      border-top-style: none;
+      border-top-width: 1.00px;
+      border-top-left-radius: 0.00px;
+      border-top-right-radius: 0.00px;
+      border-bottom-left-radius: 0.00px;
+      border-bottom-right-radius: 0.00px;
+      box-shadow: none;
+      width: 151.51px;
+    height: 48.00px;
+    left: 0.00px;
+    top: 0.00px;
+
+}
+
+.dulce .horizontalShowcaseSoldOut .group54d97318fd .comprar677ec46f {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      background-color: rgba(255, 255, 255, 0);
+      text-align: center;
+      letter-spacing: 0.38px;
+      color: rgba(255, 255, 255, 1);
+      -webkit-text-stroke: 1.00px rgba(0, 0, 0, 0);
+      font-size: 24.00px;
+      font-weight: 700;
+    font-style: normal;
+      font-family: productsans_bold, Arial;
+      text-decoration: none;
+      box-shadow: none;
+      overflow-x: unset;
+      overflow-y: unset;
+      white-space: pre;
+      width: 122.00px;
+    height: 29.00px;
+    left: 13.75px;
+    top: 9.00px;
+
+}
+
+.dulce .rectangle637d10554c {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      background-image: url("assets/rectangle637d10554c.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      background-color: rgba(255, 255, 255, 1);
+      border-bottom-color: rgba(112, 112, 112, 1);
+      border-bottom-style: none;
+      border-bottom-width: 1.00px;
+      border-left-color: rgba(112, 112, 112, 1);
+      border-left-style: none;
+      border-left-width: 1.00px;
+      border-right-color: rgba(112, 112, 112, 1);
+      border-right-style: none;
+      border-right-width: 1.00px;
+      border-top-color: rgba(112, 112, 112, 1);
+      border-top-style: none;
+      border-top-width: 1.00px;
+      border-top-left-radius: 0.00px;
+      border-top-right-radius: 0.00px;
+      border-bottom-left-radius: 0.00px;
+      border-bottom-right-radius: 0.00px;
+      -webkit-filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.1607843137254902));
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.1607843137254902));
+      width: 814.00px;
+    height: 307.00px;
+    left: 138.00px;
+    top: 608.00px;
+
+}
+
+.dulce .galletaChocolateFondoBlanco1205530 {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      background-image: url("assets/galletaChocolateFondoBlanco1205530.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      background-color: rgba(255, 255, 255, 0);
+      border-bottom-color: rgba(112, 112, 112, 1);
+      border-bottom-style: none;
+      border-bottom-width: 1.00px;
+      border-left-color: rgba(112, 112, 112, 1);
+      border-left-style: none;
+      border-left-width: 1.00px;
+      border-right-color: rgba(112, 112, 112, 1);
+      border-right-style: none;
+      border-right-width: 1.00px;
+      border-top-color: rgba(112, 112, 112, 1);
+      border-top-style: none;
+      border-top-width: 1.00px;
+      border-top-left-radius: 0.00px;
+      border-top-right-radius: 0.00px;
+      border-bottom-left-radius: 0.00px;
+      border-bottom-right-radius: 0.00px;
+      box-shadow: none;
+      width: 307.00px;
+    height: 307.00px;
+    left: 138.00px;
+    top: 608.00px;
+
+}
+
+.dulce .group55de1b840e {
+
+      display: block;
+      position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      overflow-x: unset;
+      overflow-y: unset;
+      background-color: transparent;
+      width: 465.00px;
+    height: 171.00px;
+    left: 465.00px;
+    top: 629.00px;
+
+}
+
+.dulce .group55de1b840e .galletaDeChispasDeChocolate {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      background-color: rgba(255, 255, 255, 0);
+      text-align: left;
+      letter-spacing: 0.40px;
+      color: rgba(0, 0, 0, 1);
+      -webkit-text-stroke: 1.00px rgba(0, 0, 0, 0);
+      font-size: 25.00px;
+      font-weight: 400;
+    font-style: normal;
+      font-family: productsansmedium_regular, Arial;
+      text-decoration: none;
+      box-shadow: none;
+      overflow-x: unset;
+      overflow-y: unset;
+      width: 465.00px;
+    height: 31.00px;
+    left: 0.00px;
+    top: 0.00px;
+
+}
+
+.dulce .group55de1b840e .insertarPequenaDescripcion7e581897 {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 0.4000000059604645;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      background-color: rgba(255, 255, 255, 0);
+      text-align: left;
+      letter-spacing: 0.24px;
+      color: rgba(0, 0, 0, 1);
+      -webkit-text-stroke: 1.00px rgba(0, 0, 0, 0);
+      font-size: 15.00px;
+      font-weight: 400;
+    font-style: normal;
+      font-family: productsansmedium_regular, Arial;
+      text-decoration: none;
+      box-shadow: none;
+      overflow-x: unset;
+      overflow-y: unset;
+      width: 465.00px;
+    height: 83.00px;
+    left: 0.00px;
+    top: 88.00px;
+
+}
+
+.dulce .group55de1b840e .group52fe211e72 {
+
+      display: block;
+      position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      overflow-x: unset;
+      overflow-y: unset;
+      background-color: transparent;
+      width: 100.94px;
+    height: 16.67px;
+    left: 0.00px;
+    top: 44.00px;
+
+}
+
+.dulce .group55de1b840e .group52fe211e72 .icstar24px6a91fe12 {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      fill: rgba(239, 130, 22, 1);
+      box-shadow: none;
+      width: 17.54px;
+    height: 16.67px;
+    left: 0.00px;
+    top: 0.00px;
+
+}
+
+.dulce .group55de1b840e .group52fe211e72 .icstar24pxda1671fc {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      fill: rgba(239, 130, 22, 1);
+      box-shadow: none;
+      width: 17.54px;
+    height: 16.67px;
+    left: 20.85px;
+    top: 0.00px;
+
+}
+
+.dulce .group55de1b840e .group52fe211e72 .icstar24px841c0970 {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      fill: rgba(239, 130, 22, 1);
+      box-shadow: none;
+      width: 17.54px;
+    height: 16.67px;
+    left: 41.70px;
+    top: 0.00px;
+
+}
+
+.dulce .group55de1b840e .group52fe211e72 .icstar24px07a6020d {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      fill: rgba(239, 130, 22, 1);
+      box-shadow: none;
+      width: 17.54px;
+    height: 16.67px;
+    left: 62.55px;
+    top: 0.00px;
+
+}
+
+.dulce .group55de1b840e .group52fe211e72 .icstar24pxb5838104 {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      fill: rgba(239, 130, 22, 1);
+      box-shadow: none;
+      width: 17.54px;
+    height: 16.67px;
+    left: 83.40px;
+    top: 0.00px;
+
+}
+
+.dulce .group55de1b840e .x507fc4a466 {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      background-color: rgba(255, 255, 255, 0);
+      text-align: left;
+      letter-spacing: 0.32px;
+      color: rgba(239, 130, 22, 1);
+      -webkit-text-stroke: 1.00px rgba(0, 0, 0, 0);
+      font-size: 20.00px;
+      font-weight: 400;
+    font-style: normal;
+      font-family: productsansmedium_regular, Arial;
+      text-decoration: none;
+      box-shadow: none;
+      overflow-x: unset;
+      overflow-y: unset;
+      white-space: pre;
+      width: 39.00px;
+    height: 24.00px;
+    left: 110.00px;
+    top: 40.00px;
+
+}
+
+.dulce .agotado6ae2a722 {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      background-color: rgba(255, 255, 255, 0);
+      text-align: left;
+      letter-spacing: 0.48px;
+      color: rgba(239, 130, 22, 1);
+      -webkit-text-stroke: 1.00px rgba(0, 0, 0, 0);
+      font-size: 30.00px;
+      font-weight: 700;
+    font-style: normal;
+      font-family: productsans_bold, Arial;
+      text-decoration: none;
+      box-shadow: none;
+      overflow-x: unset;
+      overflow-y: unset;
+      white-space: pre;
+      width: 155.00px;
+    height: 37.00px;
+    left: 617.00px;
+    top: 849.00px;
+
+}
+
+.dulce .rectangle6445063769 {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      background-color: rgba(204, 204, 204, 1);
+      border-bottom-color: rgba(112, 112, 112, 1);
+      border-bottom-style: none;
+      border-bottom-width: 1.00px;
+      border-left-color: rgba(112, 112, 112, 1);
+      border-left-style: none;
+      border-left-width: 1.00px;
+      border-right-color: rgba(112, 112, 112, 1);
+      border-right-style: none;
+      border-right-width: 1.00px;
+      border-top-color: rgba(112, 112, 112, 1);
+      border-top-style: none;
+      border-top-width: 1.00px;
+      border-top-left-radius: 0.00px;
+      border-top-right-radius: 0.00px;
+      border-bottom-left-radius: 0.00px;
+      border-bottom-right-radius: 0.00px;
+      box-shadow: none;
+      width: 153.00px;
+    height: 48.00px;
+    left: 777.00px;
+    top: 839.00px;
+
+}
+
+.dulce .comprar7f51cbbd {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      background-color: rgba(255, 255, 255, 0);
+      text-align: center;
+      letter-spacing: 0.40px;
+      color: rgba(255, 255, 255, 1);
+      -webkit-text-stroke: 1.00px rgba(0, 0, 0, 0);
+      font-size: 25.00px;
+      font-weight: 700;
+    font-style: normal;
+      font-family: productsans_bold, Arial;
+      text-decoration: none;
+      box-shadow: none;
+      overflow-x: unset;
+      overflow-y: unset;
+      white-space: pre;
+      width: 126.00px;
+    height: 30.00px;
+    left: 790.25px;
+    top: 848.00px;
+
+}
+
+.dulce .hot {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      background-color: rgba(255, 255, 255, 0);
+      text-align: center;
+      letter-spacing: 0.29px;
+      color: rgba(255, 255, 255, 1);
+      -webkit-text-stroke: 1.00px rgba(0, 0, 0, 0);
+      font-size: 18.00px;
+      font-weight: 700;
+    font-style: normal;
+      font-family: productsans_bold, Arial;
+      text-decoration: none;
+      box-shadow: none;
+      overflow-x: unset;
+      overflow-y: unset;
+      white-space: pre;
+      width: 38.00px;
+    height: 22.00px;
+    left: 381.42px;
+    top: 641.08px;
+
+}
+
+.dulce .rectangle634063e7ac {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      background-image: url("assets/rectangle634063e7ac.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      background-color: rgba(255, 255, 255, 1);
+      border-bottom-color: rgba(112, 112, 112, 1);
+      border-bottom-style: none;
+      border-bottom-width: 1.00px;
+      border-left-color: rgba(112, 112, 112, 1);
+      border-left-style: none;
+      border-left-width: 1.00px;
+      border-right-color: rgba(112, 112, 112, 1);
+      border-right-style: none;
+      border-right-width: 1.00px;
+      border-top-color: rgba(112, 112, 112, 1);
+      border-top-style: none;
+      border-top-width: 1.00px;
+      border-top-left-radius: 0.00px;
+      border-top-right-radius: 0.00px;
+      border-bottom-left-radius: 0.00px;
+      border-bottom-right-radius: 0.00px;
+      -webkit-filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.1607843137254902));
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.1607843137254902));
+      width: 814.00px;
+    height: 307.00px;
+    left: 968.00px;
+    top: 275.00px;
+
+}
+
+.dulce .images2 {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      background-image: url("assets/images2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      background-color: rgba(255, 255, 255, 0);
+      border-bottom-color: rgba(112, 112, 112, 1);
+      border-bottom-style: none;
+      border-bottom-width: 1.00px;
+      border-left-color: rgba(112, 112, 112, 1);
+      border-left-style: none;
+      border-left-width: 1.00px;
+      border-right-color: rgba(112, 112, 112, 1);
+      border-right-style: none;
+      border-right-width: 1.00px;
+      border-top-color: rgba(112, 112, 112, 1);
+      border-top-style: none;
+      border-top-width: 1.00px;
+      border-top-left-radius: 0.00px;
+      border-top-right-radius: 0.00px;
+      border-bottom-left-radius: 0.00px;
+      border-bottom-right-radius: 0.00px;
+      box-shadow: none;
+      width: 304.01px;
+    height: 307.00px;
+    left: 968.00px;
+    top: 275.00px;
+
+}
+
+.dulce .group554affa35e {
+
+      display: block;
+      position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      overflow-x: unset;
+      overflow-y: unset;
+      background-color: transparent;
+      width: 465.00px;
+    height: 171.00px;
+    left: 1291.82px;
+    top: 296.00px;
+
+}
+
+.dulce .group554affa35e .danessaDulce {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      background-color: rgba(255, 255, 255, 0);
+      text-align: left;
+      letter-spacing: 0.40px;
+      color: rgba(0, 0, 0, 1);
+      -webkit-text-stroke: 1.00px rgba(0, 0, 0, 0);
+      font-size: 25.00px;
+      font-weight: 400;
+    font-style: normal;
+      font-family: productsansmedium_regular, Arial;
+      text-decoration: none;
+      box-shadow: none;
+      overflow-x: unset;
+      overflow-y: unset;
+      width: 465.00px;
+    height: 31.00px;
+    left: 0.00px;
+    top: 0.00px;
+
+}
+
+.dulce .group554affa35e .insertarPequenaDescripcion1c5a2784 {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 0.4000000059604645;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      background-color: rgba(255, 255, 255, 0);
+      text-align: left;
+      letter-spacing: 0.24px;
+      color: rgba(0, 0, 0, 1);
+      -webkit-text-stroke: 1.00px rgba(0, 0, 0, 0);
+      font-size: 15.00px;
+      font-weight: 400;
+    font-style: normal;
+      font-family: productsansmedium_regular, Arial;
+      text-decoration: none;
+      box-shadow: none;
+      overflow-x: unset;
+      overflow-y: unset;
+      width: 465.00px;
+    height: 83.00px;
+    left: 0.00px;
+    top: 88.00px;
+
+}
+
+.dulce .group554affa35e .group52a0fb0be9 {
+
+      display: block;
+      position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      overflow-x: unset;
+      overflow-y: unset;
+      background-color: transparent;
+      width: 99.96px;
+    height: 16.67px;
+    left: 0.00px;
+    top: 44.00px;
+
+}
+
+.dulce .group554affa35e .group52a0fb0be9 .icstar24pxf31a9599 {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      fill: rgba(239, 130, 22, 1);
+      box-shadow: none;
+      width: 17.37px;
+    height: 16.67px;
+    left: 0.00px;
+    top: 0.00px;
+
+}
+
+.dulce .group554affa35e .group52a0fb0be9 .icstar24px12bfc246 {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      fill: rgba(239, 130, 22, 1);
+      box-shadow: none;
+      width: 17.37px;
+    height: 16.67px;
+    left: 20.65px;
+    top: 0.00px;
+
+}
+
+.dulce .group554affa35e .group52a0fb0be9 .icstar24px70002a8b {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      fill: rgba(239, 130, 22, 1);
+      box-shadow: none;
+      width: 17.37px;
+    height: 16.67px;
+    left: 41.29px;
+    top: 0.00px;
+
+}
+
+.dulce .group554affa35e .group52a0fb0be9 .icstar24pxbea92ef1 {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      fill: rgba(239, 130, 22, 1);
+      box-shadow: none;
+      width: 17.37px;
+    height: 16.67px;
+    left: 61.94px;
+    top: 0.00px;
+
+}
+
+.dulce .group554affa35e .group52a0fb0be9 .icstar24pxc6800ef8 {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      fill: rgba(239, 130, 22, 1);
+      box-shadow: none;
+      width: 17.37px;
+    height: 16.67px;
+    left: 82.58px;
+    top: 0.00px;
+
+}
+
+.dulce .group554affa35e .x50feef6cde {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      background-color: rgba(255, 255, 255, 0);
+      text-align: left;
+      letter-spacing: 0.30px;
+      color: rgba(239, 130, 22, 1);
+      -webkit-text-stroke: 1.00px rgba(0, 0, 0, 0);
+      font-size: 19.00px;
+      font-weight: 400;
+    font-style: normal;
+      font-family: productsansmedium_regular, Arial;
+      text-decoration: none;
+      box-shadow: none;
+      overflow-x: unset;
+      overflow-y: unset;
+      white-space: pre;
+      width: 37.00px;
+    height: 23.00px;
+    left: 108.93px;
+    top: 40.00px;
+
+}
+
+.dulce .agotado {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      background-color: rgba(255, 255, 255, 0);
+      text-align: left;
+      letter-spacing: 0.46px;
+      color: rgba(239, 130, 22, 1);
+      -webkit-text-stroke: 1.00px rgba(0, 0, 0, 0);
+      font-size: 29.00px;
+      font-weight: 700;
+    font-style: normal;
+      font-family: productsans_bold, Arial;
+      text-decoration: none;
+      box-shadow: none;
+      overflow-x: unset;
+      overflow-y: unset;
+      white-space: pre;
+      width: 150.00px;
+    height: 35.00px;
+    left: 1445.24px;
+    top: 516.00px;
+
+}
+
+.dulce .rectangle64fb0d869d {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      background-color: rgba(204, 204, 204, 1);
+      border-bottom-color: rgba(112, 112, 112, 1);
+      border-bottom-style: none;
+      border-bottom-width: 1.00px;
+      border-left-color: rgba(112, 112, 112, 1);
+      border-left-style: none;
+      border-left-width: 1.00px;
+      border-right-color: rgba(112, 112, 112, 1);
+      border-right-style: none;
+      border-right-width: 1.00px;
+      border-top-color: rgba(112, 112, 112, 1);
+      border-top-style: none;
+      border-top-width: 1.00px;
+      border-top-left-radius: 0.00px;
+      border-top-right-radius: 0.00px;
+      border-bottom-left-radius: 0.00px;
+      border-bottom-right-radius: 0.00px;
+      box-shadow: none;
+      width: 151.51px;
+    height: 48.00px;
+    left: 1605.73px;
+    top: 506.00px;
+
+}
+
+.dulce .comprar67c4ca57 {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      background-color: rgba(255, 255, 255, 0);
+      text-align: center;
+      letter-spacing: 0.38px;
+      color: rgba(255, 255, 255, 1);
+      -webkit-text-stroke: 1.00px rgba(0, 0, 0, 0);
+      font-size: 24.00px;
+      font-weight: 700;
+    font-style: normal;
+      font-family: productsans_bold, Arial;
+      text-decoration: none;
+      box-shadow: none;
+      overflow-x: unset;
+      overflow-y: unset;
+      white-space: pre;
+      width: 122.00px;
+    height: 29.00px;
+    left: 1619.49px;
+    top: 515.00px;
+
+}
+
+.dulce .x10 {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      background-color: rgba(255, 255, 255, 0);
+      text-align: center;
+      letter-spacing: 0.27px;
+      color: rgba(255, 255, 255, 1);
+      -webkit-text-stroke: 1.00px rgba(0, 0, 0, 0);
+      font-size: 17.00px;
+      font-weight: 700;
+    font-style: normal;
+      font-family: productsans_bold, Arial;
+      text-decoration: none;
+      box-shadow: none;
+      overflow-x: unset;
+      overflow-y: unset;
+      white-space: pre;
+      width: 40.00px;
+    height: 20.00px;
+    left: 1207.08px;
+    top: 308.08px;
+
+}
+
+.dulce .rectangle63 {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      background-image: url("assets/rectangle63.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      background-color: rgba(255, 255, 255, 1);
+      border-bottom-color: rgba(112, 112, 112, 1);
+      border-bottom-style: none;
+      border-bottom-width: 1.00px;
+      border-left-color: rgba(112, 112, 112, 1);
+      border-left-style: none;
+      border-left-width: 1.00px;
+      border-right-color: rgba(112, 112, 112, 1);
+      border-right-style: none;
+      border-right-width: 1.00px;
+      border-top-color: rgba(112, 112, 112, 1);
+      border-top-style: none;
+      border-top-width: 1.00px;
+      border-top-left-radius: 0.00px;
+      border-top-right-radius: 0.00px;
+      border-bottom-left-radius: 0.00px;
+      border-bottom-right-radius: 0.00px;
+      -webkit-filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.1607843137254902));
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.1607843137254902));
+      width: 814.00px;
+    height: 307.00px;
+    left: 138.00px;
+    top: 275.00px;
+
+}
+
+.dulce .images {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      background-image: url("assets/images.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      background-color: rgba(255, 255, 255, 0);
+      border-bottom-color: rgba(112, 112, 112, 1);
+      border-bottom-style: none;
+      border-bottom-width: 1.00px;
+      border-left-color: rgba(112, 112, 112, 1);
+      border-left-style: none;
+      border-left-width: 1.00px;
+      border-right-color: rgba(112, 112, 112, 1);
+      border-right-style: none;
+      border-right-width: 1.00px;
+      border-top-color: rgba(112, 112, 112, 1);
+      border-top-style: none;
+      border-top-width: 1.00px;
+      border-top-left-radius: 0.00px;
+      border-top-right-radius: 0.00px;
+      border-bottom-left-radius: 0.00px;
+      border-bottom-right-radius: 0.00px;
+      box-shadow: none;
+      width: 304.01px;
+    height: 307.00px;
+    left: 138.00px;
+    top: 275.00px;
+
+}
+
+.dulce .group55 {
+
+      display: block;
+      position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      overflow-x: unset;
+      overflow-y: unset;
+      background-color: transparent;
+      width: 465.00px;
+    height: 171.00px;
+    left: 461.82px;
+    top: 296.00px;
+
+}
+
+.dulce .group55 .superbikeAldor2018 {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      background-color: rgba(255, 255, 255, 0);
+      text-align: left;
+      letter-spacing: 0.40px;
+      color: rgba(0, 0, 0, 1);
+      -webkit-text-stroke: 1.00px rgba(0, 0, 0, 0);
+      font-size: 25.00px;
+      font-weight: 400;
+    font-style: normal;
+      font-family: productsansmedium_regular, Arial;
+      text-decoration: none;
+      box-shadow: none;
+      overflow-x: unset;
+      overflow-y: unset;
+      width: 465.00px;
+    height: 31.00px;
+    left: 0.00px;
+    top: 0.00px;
+
+}
+
+.dulce .group55 .insertarPequenaDescripcion {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 0.4000000059604645;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      background-color: rgba(255, 255, 255, 0);
+      text-align: left;
+      letter-spacing: 0.24px;
+      color: rgba(0, 0, 0, 1);
+      -webkit-text-stroke: 1.00px rgba(0, 0, 0, 0);
+      font-size: 15.00px;
+      font-weight: 400;
+    font-style: normal;
+      font-family: productsansmedium_regular, Arial;
+      text-decoration: none;
+      box-shadow: none;
+      overflow-x: unset;
+      overflow-y: unset;
+      width: 465.00px;
+    height: 83.00px;
+    left: 0.00px;
+    top: 88.00px;
+
+}
+
+.dulce .group55 .group52 {
+
+      display: block;
+      position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      overflow-x: unset;
+      overflow-y: unset;
+      background-color: transparent;
+      width: 99.96px;
+    height: 16.67px;
+    left: 0.00px;
+    top: 44.00px;
+
+}
+
+.dulce .group55 .group52 .icstar24pxa6027d26 {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      fill: rgba(239, 130, 22, 1);
+      box-shadow: none;
+      width: 17.37px;
+    height: 16.67px;
+    left: 0.00px;
+    top: 0.00px;
+
+}
+
+.dulce .group55 .group52 .icstar24px52601238 {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      fill: rgba(239, 130, 22, 1);
+      box-shadow: none;
+      width: 17.37px;
+    height: 16.67px;
+    left: 20.65px;
+    top: 0.00px;
+
+}
+
+.dulce .group55 .group52 .icstar24pxb992aa71 {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      fill: rgba(239, 130, 22, 1);
+      box-shadow: none;
+      width: 17.37px;
+    height: 16.67px;
+    left: 41.29px;
+    top: 0.00px;
+
+}
+
+.dulce .group55 .group52 .icstar24px9804dc1b {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      fill: rgba(239, 130, 22, 1);
+      box-shadow: none;
+      width: 17.37px;
+    height: 16.67px;
+    left: 61.94px;
+    top: 0.00px;
+
+}
+
+.dulce .group55 .group52 .icstar24px {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      fill: rgba(239, 130, 22, 1);
+      box-shadow: none;
+      width: 17.37px;
+    height: 16.67px;
+    left: 82.58px;
+    top: 0.00px;
+
+}
+
+.dulce .group55 .x50 {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      background-color: rgba(255, 255, 255, 0);
+      text-align: left;
+      letter-spacing: 0.30px;
+      color: rgba(239, 130, 22, 1);
+      -webkit-text-stroke: 1.00px rgba(0, 0, 0, 0);
+      font-size: 19.00px;
+      font-weight: 400;
+    font-style: normal;
+      font-family: productsansmedium_regular, Arial;
+      text-decoration: none;
+      box-shadow: none;
+      overflow-x: unset;
+      overflow-y: unset;
+      white-space: pre;
+      width: 37.00px;
+    height: 23.00px;
+    left: 108.93px;
+    top: 40.00px;
+
+}
+
+.dulce .x500 {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      background-color: rgba(255, 255, 255, 0);
+      text-align: left;
+      letter-spacing: 0.46px;
+      color: rgba(239, 130, 22, 1);
+      -webkit-text-stroke: 1.00px rgba(0, 0, 0, 0);
+      font-size: 29.00px;
+      font-weight: 700;
+    font-style: normal;
+      font-family: productsans_bold, Arial;
+      text-decoration: none;
+      box-shadow: none;
+      overflow-x: unset;
+      overflow-y: unset;
+      white-space: pre;
+      width: 72.00px;
+    height: 38.00px;
+    left: 688.79px;
+    top: 513.00px;
+
+}
+
+.dulce .group54 {
+
+      display: block;
+      position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      overflow-x: unset;
+      overflow-y: unset;
+      background-color: transparent;
+      width: 151.51px;
+    height: 48.00px;
+    left: 775.73px;
+    top: 506.00px;
+
+}
+
+.dulce .group54 .rectangle64 {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      background-color: rgba(239, 130, 22, 1);
+      border-bottom-color: rgba(112, 112, 112, 1);
+      border-bottom-style: none;
+      border-bottom-width: 1.00px;
+      border-left-color: rgba(112, 112, 112, 1);
+      border-left-style: none;
+      border-left-width: 1.00px;
+      border-right-color: rgba(112, 112, 112, 1);
+      border-right-style: none;
+      border-right-width: 1.00px;
+      border-top-color: rgba(112, 112, 112, 1);
+      border-top-style: none;
+      border-top-width: 1.00px;
+      border-top-left-radius: 0.00px;
+      border-top-right-radius: 0.00px;
+      border-bottom-left-radius: 0.00px;
+      border-bottom-right-radius: 0.00px;
+      box-shadow: none;
+      width: 151.51px;
+    height: 48.00px;
+    left: 0.00px;
+    top: 0.00px;
+
+}
+
+.dulce .group54 .comprar {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      background-color: rgba(255, 255, 255, 0);
+      text-align: center;
+      letter-spacing: 0.38px;
+      color: rgba(255, 255, 255, 1);
+      -webkit-text-stroke: 1.00px rgba(0, 0, 0, 0);
+      font-size: 24.00px;
+      font-weight: 700;
+    font-style: normal;
+      font-family: productsans_bold, Arial;
+      text-decoration: none;
+      box-shadow: none;
+      overflow-x: unset;
+      overflow-y: unset;
+      white-space: pre;
+      width: 122.00px;
+    height: 29.00px;
+    left: 13.75px;
+    top: 9.00px;
+
+}
+
+.dulce .group77 {
+
+      display: block;
+      position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      overflow-x: unset;
+      overflow-y: unset;
+      background-color: transparent;
+      width: 208.53px;
+    height: 32.53px;
+    left: 888.00px;
+    top: 1007.24px;
+
+}
+
+.dulce .group77 .group2 {
+
+      display: block;
+      position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(0.00deg);
+    -webkit-transform: rotate(0.00deg);
+    transform: rotate(0.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      overflow-x: unset;
+      overflow-y: unset;
+      background-color: transparent;
+      width: 208.53px;
+    height: 32.53px;
+    left: 0.00px;
+    top: 0.00px;
+
+}
+
+.dulce .group77 .group2 .rectangle16 {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(45.00deg);
+    -webkit-transform: rotate(45.00deg);
+    transform: rotate(45.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      background-color: rgba(239, 130, 22, 1);
+      border-bottom-color: rgba(112, 112, 112, 1);
+      border-bottom-style: none;
+      border-bottom-width: 1.00px;
+      border-left-color: rgba(112, 112, 112, 1);
+      border-left-style: none;
+      border-left-width: 1.00px;
+      border-right-color: rgba(112, 112, 112, 1);
+      border-right-style: none;
+      border-right-width: 1.00px;
+      border-top-color: rgba(112, 112, 112, 1);
+      border-top-style: none;
+      border-top-width: 1.00px;
+      border-top-left-radius: 0.00px;
+      border-top-right-radius: 0.00px;
+      border-bottom-left-radius: 0.00px;
+      border-bottom-right-radius: 0.00px;
+      box-shadow: none;
+      width: 23.00px;
+    height: 23.00px;
+    left: 4.76px;
+    top: 4.76px;
+
+}
+
+.dulce .group77 .group2 .rectangle17 {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(45.00deg);
+    -webkit-transform: rotate(45.00deg);
+    transform: rotate(45.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      background-color: rgba(204, 204, 204, 1);
+      border-bottom-color: rgba(112, 112, 112, 1);
+      border-bottom-style: none;
+      border-bottom-width: 1.00px;
+      border-left-color: rgba(112, 112, 112, 1);
+      border-left-style: none;
+      border-left-width: 1.00px;
+      border-right-color: rgba(112, 112, 112, 1);
+      border-right-style: none;
+      border-right-width: 1.00px;
+      border-top-color: rgba(112, 112, 112, 1);
+      border-top-style: none;
+      border-top-width: 1.00px;
+      border-top-left-radius: 0.00px;
+      border-top-right-radius: 0.00px;
+      border-bottom-left-radius: 0.00px;
+      border-bottom-right-radius: 0.00px;
+      box-shadow: none;
+      width: 23.00px;
+    height: 23.00px;
+    left: 48.76px;
+    top: 4.76px;
+
+}
+
+.dulce .group77 .group2 .rectangle18 {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(45.00deg);
+    -webkit-transform: rotate(45.00deg);
+    transform: rotate(45.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      background-color: rgba(204, 204, 204, 1);
+      border-bottom-color: rgba(112, 112, 112, 1);
+      border-bottom-style: none;
+      border-bottom-width: 1.00px;
+      border-left-color: rgba(112, 112, 112, 1);
+      border-left-style: none;
+      border-left-width: 1.00px;
+      border-right-color: rgba(112, 112, 112, 1);
+      border-right-style: none;
+      border-right-width: 1.00px;
+      border-top-color: rgba(112, 112, 112, 1);
+      border-top-style: none;
+      border-top-width: 1.00px;
+      border-top-left-radius: 0.00px;
+      border-top-right-radius: 0.00px;
+      border-bottom-left-radius: 0.00px;
+      border-bottom-right-radius: 0.00px;
+      box-shadow: none;
+      width: 23.00px;
+    height: 23.00px;
+    left: 92.76px;
+    top: 4.76px;
+
+}
+
+.dulce .group77 .group2 .rectangle19 {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(45.00deg);
+    -webkit-transform: rotate(45.00deg);
+    transform: rotate(45.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      background-color: rgba(204, 204, 204, 1);
+      border-bottom-color: rgba(112, 112, 112, 1);
+      border-bottom-style: none;
+      border-bottom-width: 1.00px;
+      border-left-color: rgba(112, 112, 112, 1);
+      border-left-style: none;
+      border-left-width: 1.00px;
+      border-right-color: rgba(112, 112, 112, 1);
+      border-right-style: none;
+      border-right-width: 1.00px;
+      border-top-color: rgba(112, 112, 112, 1);
+      border-top-style: none;
+      border-top-width: 1.00px;
+      border-top-left-radius: 0.00px;
+      border-top-right-radius: 0.00px;
+      border-bottom-left-radius: 0.00px;
+      border-bottom-right-radius: 0.00px;
+      box-shadow: none;
+      width: 23.00px;
+    height: 23.00px;
+    left: 136.76px;
+    top: 4.76px;
+
+}
+
+.dulce .group77 .group2 .rectangle20 {
+    position: absolute;
+      box-sizing: content-box;
+      -ms-transform: rotate(45.00deg);
+    -webkit-transform: rotate(45.00deg);
+    transform: rotate(45.00deg);
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+      opacity: 1;
+      cursor: default;
+      margin-top: 0.00px;
+      margin-right: 0.00px;
+      margin-bottom: 0.00px;
+      margin-left: 0.00px;
+      padding-top: 0.00px;
+      padding-right: 0.00px;
+      padding-bottom: 0.00px;
+      padding-left: 0.00px;
+      background-color: rgba(204, 204, 204, 1);
+      border-bottom-color: rgba(112, 112, 112, 1);
+      border-bottom-style: none;
+      border-bottom-width: 1.00px;
+      border-left-color: rgba(112, 112, 112, 1);
+      border-left-style: none;
+      border-left-width: 1.00px;
+      border-right-color: rgba(112, 112, 112, 1);
+      border-right-style: none;
+      border-right-width: 1.00px;
+      border-top-color: rgba(112, 112, 112, 1);
+      border-top-style: none;
+      border-top-width: 1.00px;
+      border-top-left-radius: 0.00px;
+      border-top-right-radius: 0.00px;
+      border-bottom-left-radius: 0.00px;
+      border-bottom-right-radius: 0.00px;
+      box-shadow: none;
+      width: 23.00px;
+    height: 23.00px;
+    left: 180.76px;
+    top: 4.76px;
+
+}
+
