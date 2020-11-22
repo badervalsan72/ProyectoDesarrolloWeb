@@ -3,13 +3,13 @@
 <div data-layer="0c78ca66-1c56-4977-ae9d-8096eca88aa5" class="header">
 
     <div class="mySlides fade">
-        <div data-layer="18ca0f69-2dff-4054-9888-f1f2fe3a4a3d" class="maskGroup4"></div>
-        <div data-layer="ce06a76a-27d9-478f-936b-f0bdcc324853" class="group57">
-            <input style="cursor: pointer;" type="button" data-layer="9df6f988-7d6f-414f-be38-73cc11d3ec69" class="rectangle29">
-            <div data-layer="86fb0958-6b99-4a67-8810-ff5e1b36b218" class="registrarseYa">REGISTRARSE YA</div>
+        <div  class="maskGroup4"></div>
+        <div  class="group57">
+            <input style="cursor: pointer;" type="button" class="rectangle29">
+            <div class="registrarseYa">REGISTRARSE YA</div>
         </div>
-        <div data-layer="73bc4faa-521a-4d53-b329-649a29044c64" class="group59">
-            <div data-layer="6eeac8da-cd5a-48ab-94f9-c015c05b6f6f" class="envioshastaTuCasa"><span class="envioshastaTuCasa-0">Envios<br /></span><span class="envioshastaTuCasa-7">hasta tu casa</span></div>
+        <div  class="group59">
+            <div class="envioshastaTuCasa"><span class="envioshastaTuCasa-0">Envios<br /></span><span class="envioshastaTuCasa-7">hasta tu casa</span></div>
         </div>
     </div>
 
