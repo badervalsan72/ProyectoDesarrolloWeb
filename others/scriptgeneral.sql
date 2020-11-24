@@ -21,7 +21,7 @@ CREATE TABLE Ordenes (
     -- IDUsuario BIGINT NOT NULL,
     IDUsuario int NOT NULL,
     Fecha date NOT NULL,
-    EstadoEntrega bool NOT NULL,
+    EstadoEntrega bit NOT NULL,
     CONSTRAINT Ordenes_pk PRIMARY KEY (ID)
 );
 
@@ -42,12 +42,13 @@ CREATE TABLE Usuarios (
     Nombre varchar(50) NOT NULL,
     Apellido1 varchar(50) NOT NULL,
     Apellido2 varchar(50) NOT NULL,
-    Lugar varchar(50) NOT NULL,
-    Contrasena varchar(50) NOT NULL,
+    -- Lugar varchar(50) NOT NULL,
+    Contrasena varchar(128) NOT NULL,
     Descuento int NOT NULL,
     Correo varchar(50) NOT NULL,
     CONSTRAINT Usuarios_pk PRIMARY KEY (ID)
 );
+-- nombre, ap1, ap2, pwd, desc, correo 
  
 -- foreign keys
 -- Reference: OrdenEsp_Ordenes (table: OrdenEsp)
@@ -68,13 +69,13 @@ ALTER TABLE Ordenes ADD CONSTRAINT Ordenes_Usuarios FOREIGN KEY Ordenes_Usuarios
 
 
 
-
+/*
 insert into Usuarios (ID, Nombre, Lugar, Contrasena, Descuento, Correo, Apellido1, Apellido2) values (423012246, 'Dud', '68482 Gale Center', 'j2vWUJkUh4', 51, 'dreyburn0@discuz.net', 'Keddie', 'Reyburn');
 insert into Usuarios (ID, Nombre, Lugar, Contrasena, Descuento, Correo, Apellido1, Apellido2) values (581530492, 'Beniamino', '96433 Independence Avenue', 'KclnBXsbm', 43, 'bwollard1@bigcartel.com', 'Hearnaman', 'Wollard');
 insert into Usuarios (ID, Nombre, Lugar, Contrasena, Descuento, Correo, Apellido1, Apellido2) values (716151168, 'Vern', '3792 Corben Park', 'BknLvR', 2, 'vpaolucci2@berkeley.edu', 'Leggett', 'Paolucci');
 insert into Usuarios (ID, Nombre, Lugar, Contrasena, Descuento, Correo, Apellido1, Apellido2) values (146912540, 'Doro', '466 Bonner Way', 'p5cmGD0Kk', 56, 'dsphinxe3@1688.com', 'Bane', 'Sphinxe');
 insert into Usuarios (ID, Nombre, Lugar, Contrasena, Descuento, Correo, Apellido1, Apellido2) values (145428400, 'Eadie', '36 Comanche Plaza', 'I4JjnvwZ0', 93, 'ecappel4@google.ru', 'Mattocks', 'Cappel');
-
+*/
 
 insert into Ordenes (ID, IDUsuario, Fecha, estadoEntrega) values (1, 716151168, '2020-06-16', true);
 insert into Ordenes (ID, IDUsuario, Fecha, estadoEntrega) values (2, 145428400, '2020-04-28', true);
