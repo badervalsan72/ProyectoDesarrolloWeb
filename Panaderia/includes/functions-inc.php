@@ -92,7 +92,7 @@ function uidExists($conn, $cedula) {
 
 function createUser($conn, $cedula, $name, $email, $apellido1, $apellido2, $pwd) { 
 // id, nombre, ap1, ap2, pwd, desc, correo 
- $sql = "INSERT INTO Usuarios (ID, Nombre, Apellido1, Apellido2, Contrasena, Descuento, Correo) VALUES (?, ?, ?, ?, ?, ?);";
+ $sql = "INSERT INTO Usuarios (ID, Nombre, Apellido1, Apellido2, Contrasena, Descuento, Correo) VALUES (?, ?, ?, ?, ?, ?, ?);";
   	$descuento = 0; 
 	$stmt = mysqli_stmt_init($conn);
 	if (!mysqli_stmt_prepare($stmt, $sql)) {
@@ -103,7 +103,7 @@ function createUser($conn, $cedula, $name, $email, $apellido1, $apellido2, $pwd)
 	$hashedPwd = password_hash($pwd, PASSWORD_DEFAULT);
 
 	// mysqli_stmt_bind_param($stmt, "ssisssis", $name, $email, $uid, $hashedPwd, $apellido1, $apellido2, $rol, $departamento);
-	mysqli_stmt_bind_param($stmt, "isssssis", $cedula, $name, $apellido1, $apellido2, $hashedPwd, $descuento, $email);
+	mysqli_stmt_bind_param($stmt, "issssis", $cedula, $name, $apellido1, $apellido2, $hashedPwd, $descuento, $email);
 	mysqli_stmt_execute($stmt);
 	mysqli_stmt_close($stmt);
 	mysqli_close($conn);

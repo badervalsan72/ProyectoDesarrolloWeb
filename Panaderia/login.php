@@ -105,6 +105,66 @@
 		</section>
 	</div>
 
+	<?php
+    // ERRORES DEL SIGNUP
+    if (isset($_GET["error"])) {
+		switch($_GET["error"]) {
+			case "emptyinput":
+				echo "<script type='text/javascript'>alert('Por favor, rellene los espacios!');</script>";
+				break;
+			case "invaliduid":
+				echo "<script type='text/javascript'>alert('Por favor, elija un usuario correcto!');</script>";
+				break;
+			case "invalidemail":
+				echo "<script type='text/javascript'>alert('!');</script>";
+				break;
+			case "passwordsdontmatch":
+				echo "<script type='text/javascript'>alert('Usuario registrado!');</script>";
+				break;
+			case "stmtfailed":
+				echo "<script type='text/javascript'>alert('Algo salió mal!');</script>";
+				break;
+			case "usernametaken":
+				echo "<script type='text/javascript'>alert('El usuario ya existe!');</script>";
+				break;
+			case "none":
+				echo "<script type='text/javascript'>alert('Usuario registrado!');</script>";
+				break;
+			case "uidlength":
+				echo "<script type='text/javascript'>alert('Su cédula debe tener 9 dígitos!');</script>";
+				break;
+			default:
+				break;
+		}
+		/*
+      if ($_GET["error"] == "emptyinput") {
+        echo "<script type='text/javascript'>alert('Por favor, rellene los espacios!');</script>";
+      }
+      else if ($_GET["error"] == "invaliduid") {
+        echo "<script type='text/javascript'>alert('Por favor, elija un usuario correcto!');</script>";
+      }
+      else if ($_GET["error"] == "invalidemail") {
+        echo "<script type='text/javascript'>alert('!');</script>";
+      } 
+      else if ($_GET["error"] == "passwordsdontmatch") {
+        echo "<script type='text/javascript'>alert('Usuario registrado!');</script>";
+      } 
+      else if ($_GET["error"] == "stmtfailed") {
+        echo "<script type='text/javascript'>alert('Algo salió mal!');</script>";
+      }
+      else if ($_GET["error"] == "usernametaken") {
+        echo "<script type='text/javascript'>alert('El usuario ya existe!');</script>";
+      }
+      else if ($_GET["error"] == "none") {
+        echo "<script type='text/javascript'>alert('Usuario registrado!');</script>";
+      }
+      else if ($_GET["error"] == "uidlength") {
+        echo "<script type='text/javascript'>alert('Su cédula debe tener 9 dígitos!');</script>";
+      } */
+	}
+	
+  ?>
+
 	<a href="#" class="scrollup waves-effect waves-dark"><i class="fa fa-angle-up active"></i></a>
 	<!-- javascript
     ================================================== -->
