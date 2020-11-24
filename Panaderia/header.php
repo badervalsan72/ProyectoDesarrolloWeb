@@ -1,5 +1,5 @@
 	<!-- start header -->
-	<header>
+    <header>
         <div class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
@@ -15,7 +15,17 @@
                         <li><a class="waves-effect waves-dark" href="index.php">Inicio</a></li> 
                         <li><a class="waves-effect waves-dark" href="order.php">Ordenar aquí</a></li>
                         <li><a class="waves-effect waves-dark" href="contact.html">Carrito de Compras</a></li>
-                        <li class="active"><a class="waves-effect waves-dark" href="login.php">Iniciar Sesión</a></li>
+                        
+                        <?php
+                        session_start(); 
+                        if (isset($_SESSION["email"])) {                        
+                            echo "<li class='active'><a class='waves-effect waves-dark' href='logout.php'>Cerrar Sesión</a></li>"; 
+                        }
+                        else {
+                            echo "<li class='active'><a class='waves-effect waves-dark' href='login.php'>Iniciar Sesión</a></li>"; 
+                        }                        
+                        ?>
+                         
                     </ul>
                 </div>
             </div>

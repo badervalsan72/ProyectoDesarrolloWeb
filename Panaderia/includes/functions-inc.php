@@ -60,15 +60,15 @@ function uidlength($cedula) {
 }
 
 // Check if username is in database, if so then return data
-function uidExists($conn, $cedula) {
-  $sql = "SELECT * FROM Usuarios WHERE ID = ?;";
+function uidExists($conn, $email) {
+  $sql = "SELECT * FROM Usuarios WHERE Correo = ?;";
 	$stmt = mysqli_stmt_init($conn);
 	if (!mysqli_stmt_prepare($stmt, $sql)) {
 	 	header("location: ../signup.php?error=stmtfailedExistingUser");
 		exit();
 	}
 
-	mysqli_stmt_bind_param($stmt, "i", $cedula);
+	mysqli_stmt_bind_param($stmt, "s", $email);
 	mysqli_stmt_execute($stmt);
 
 	// "Get result" returns the results from a prepared statement
@@ -140,12 +140,10 @@ function loginUser($conn, $email, $pwd) {
 		header("location: ../login.php?error=wrongpassword");
 		exit();
 	}
-	// v
+
 	else if ($checkPwd === true) {
 		session_start();
 		$_SESSION["email"] = $email; 
-		// $_SESSION["uid"] = $uidExists["ID"];
-		// $_SESSION["username"] = $uidExists["Nombre"];
 		header("location: ../index.php?error=none");
 		exit();
 	}

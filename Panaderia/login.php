@@ -47,7 +47,7 @@
 								<label for="email" class=""> Email </label>
 							</div>
 							<div class="input-field">
-								<input type="password" name="password" class="form-control" id="password" name="password_login" required data-validation-required-message="Por favor introduzca su contraseña" />
+								<input type="password" class="form-control" id="password" name="password_login" required data-validation-required-message="Por favor introduzca su contraseña" />
 								<label for="password" class=""> Contraseña </label>
 								<p class="help-block"></p>
 							</div>
@@ -116,10 +116,10 @@
 				echo "<script type='text/javascript'>alert('Por favor, elija un usuario correcto!');</script>";
 				break;
 			case "invalidemail":
-				echo "<script type='text/javascript'>alert('!');</script>";
+				echo "<script type='text/javascript'>alert('email invalido!');</script>";
 				break;
 			case "passwordsdontmatch":
-				echo "<script type='text/javascript'>alert('Usuario registrado!');</script>";
+				echo "<script type='text/javascript'>alert('Las contraseñas deben ser iguales!');</script>";
 				break;
 			case "stmtfailed":
 				echo "<script type='text/javascript'>alert('Algo salió mal!');</script>";

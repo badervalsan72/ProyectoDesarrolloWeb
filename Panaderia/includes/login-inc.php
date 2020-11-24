@@ -17,9 +17,9 @@ if (isset($_POST["submit"])) {
 
   loginUser($conn, $email, $pwd);
 
-//AGREGAR EL CODIGO QUE ENVIE AL USUARIO A LA RESPECTIVA INTERFAZ
+
 
 } else {
-	header("location: ../login.php");
+	header("location: ../login.php?error=nosubmit");
     exit();
 }
