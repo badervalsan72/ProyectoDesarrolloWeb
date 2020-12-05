@@ -1,20 +1,34 @@
-<?php
-  // session_start();
-  // include_once 'includes/functions.inc.php';
-?>
-
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title> Panaderia </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css"> 
-    <!-- <link rel="stylesheet" href="css/style.css"> -->    
-    
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">  --> 
-  </head>
-  <body>
-
-<!--A quick wrapper to align the content (ends in footer.php)-->
-<div class="wrapper">
+	<!-- start header -->
+    <header>
+        <div class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.php"><i class="icon-info-blocks material-icons">location_on</i>Panaderia</a>
+                </div>
+                <div class="navbar-collapse collapse ">
+                    <ul class="nav navbar-nav">
+                        <li><a class="waves-effect waves-dark" href="index.php">Inicio</a></li> 
+                        <li><a class="waves-effect waves-dark" href="order.php">Ordenar aquí</a></li>
+                        <li><a class="waves-effect waves-dark" href="contact.html">Carrito de Compras</a></li>
+                        
+                        <?php
+                        session_start(); 
+                        if (isset($_SESSION["email"])) {                        
+                            echo "<li class='active'><a class='waves-effect waves-dark' href='logout.php'>Cerrar Sesión</a></li>"; 
+                        }
+                        else {
+                            echo "<li class='active'><a class='waves-effect waves-dark' href='login.php'>Iniciar Sesión</a></li>"; 
+                        }                        
+                        ?>
+                         
+                    </ul>
+                </div>
+            </div>
+        </div>
+	</header>
+	<!-- end header -->
