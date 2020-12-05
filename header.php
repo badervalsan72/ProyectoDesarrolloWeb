@@ -14,7 +14,7 @@
                     <ul class="nav navbar-nav">
                         <li><a class="waves-effect waves-dark" href="index.php">Inicio</a></li> 
                         <li><a class="waves-effect waves-dark" href="order.php">Ordenar aquí</a></li>
-                        <li><a class="waves-effect waves-dark" href="contact.html">Carrito de Compras</a></li>
+                        <li><a class="waves-effect waves-dark" href="cart.php">Carrito de Compras</a></li>
                         
                         <?php
                         session_start(); 
