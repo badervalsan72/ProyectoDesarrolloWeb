@@ -48,6 +48,14 @@ CREATE TABLE Usuarios (
     Correo varchar(50) NOT NULL,
     CONSTRAINT Usuarios_pk PRIMARY KEY (ID)
 );
+
+CREATE TABLE Tarjetas ( 
+    ID bigint NOT NULL, 
+    Titular varchar(128) NOT NULL, 
+    FechaVencimiento date NOT NULL, 
+    CCV int NOT NULL, 
+    CONSTRAINT Tarjetas_pk PRIMARY KEY (ID)
+); 
 -- nombre, ap1, ap2, pwd, desc, correo 
  
 -- foreign keys
