@@ -3,6 +3,7 @@ DROP TABLE OrdenEsp;
 DROP TABLE Productos; 
 DROP TABLE Ordenes; 
 DROP TABLE Usuarios;
+DROP TABLE Tarjetas; 
 */ 
 
 -- tables
@@ -31,7 +32,8 @@ CREATE TABLE Productos (
     Nombre varchar(50) NOT NULL,
     Stock int NOT NULL,
     PrecioUnitario int NOT NULL,
-    Imagen blob NOT NULL,
+    NombreImagen varchar(128) NOT NULL,
+    Tipo bit NOT NULL, 
     CONSTRAINT Productos_pk PRIMARY KEY (ID)
 );
 
@@ -72,35 +74,14 @@ ALTER TABLE OrdenEsp ADD CONSTRAINT OrdenEsp_Productos FOREIGN KEY OrdenEsp_Prod
 ALTER TABLE Ordenes ADD CONSTRAINT Ordenes_Usuarios FOREIGN KEY Ordenes_Usuarios (IDUsuario)
     REFERENCES Usuarios (ID);
 
+ 
 
-insert into Ordenes (ID, IDUsuario, Fecha, estadoEntrega) values (1, 716151168, '2020-06-16', true);
-insert into Ordenes (ID, IDUsuario, Fecha, estadoEntrega) values (2, 145428400, '2020-04-28', true);
-insert into Ordenes (ID, IDUsuario, Fecha, estadoEntrega) values (3, 146912540, '2020-03-27', false);
-insert into Ordenes (ID, IDUsuario, Fecha, estadoEntrega) values (4, 145428400, '2020-01-19', true);
-insert into Ordenes (ID, IDUsuario, Fecha, estadoEntrega) values (5, 423012246, '2020-08-04', true);
-insert into Ordenes (ID, IDUsuario, Fecha, estadoEntrega) values (6, 423012246, '2020-05-04', false);
-
-
-
-insert into Productos (ID, Nombre, Stock, PrecioUnitario, Imagen) values (1, 'Blouse / Shirt / Sweater', 20, 2427, 'http://dummyimage.com/239x120.jpg/cc0000/ffffff');
-insert into Productos (ID, Nombre, Stock, PrecioUnitario, Imagen) values (2, 'Shrimp - Black Tiger 6 - 8', 34, 2526, 'http://dummyimage.com/156x125.png/ff4444/ffffff');
-insert into Productos (ID, Nombre, Stock, PrecioUnitario, Imagen) values (3, 'Beef - Kobe Striploin', 0, 2574, 'http://dummyimage.com/100x109.png/ff4444/ffffff');
-insert into Productos (ID, Nombre, Stock, PrecioUnitario, Imagen) values (4, 'Appetizer - Sausage Rolls', 15, 1655, 'http://dummyimage.com/190x163.png/dddddd/000000');
-insert into Productos (ID, Nombre, Stock, PrecioUnitario, Imagen) values (5, 'Sauce - Chili', 6, 1849, 'http://dummyimage.com/225x151.jpg/ff4444/ffffff');
-insert into Productos (ID, Nombre, Stock, PrecioUnitario, Imagen) values (6, 'Soup - Campbells Chicken', 31, 3305, 'http://dummyimage.com/167x127.bmp/dddddd/000000');
-
-
-
-insert into OrdenEsp (ID, IDOrden, IDProducto, Cantidad) values (1, 2, 4, 8);
-insert into OrdenEsp (ID, IDOrden, IDProducto, Cantidad) values (2, 3, 6, 5);
-insert into OrdenEsp (ID, IDOrden, IDProducto, Cantidad) values (3, 6, 3, 7);
-insert into OrdenEsp (ID, IDOrden, IDProducto, Cantidad) values (4, 6, 4, 8);
-insert into OrdenEsp (ID, IDOrden, IDProducto, Cantidad) values (5, 3, 2, 3);
-insert into OrdenEsp (ID, IDOrden, IDProducto, Cantidad) values (6, 6, 2, 7);
-insert into OrdenEsp (ID, IDOrden, IDProducto, Cantidad) values (7, 2, 1, 2);
-insert into OrdenEsp (ID, IDOrden, IDProducto, Cantidad) values (8, 3, 2, 2);
-insert into OrdenEsp (ID, IDOrden, IDProducto, Cantidad) values (9, 2, 1, 9);
-insert into OrdenEsp (ID, IDOrden, IDProducto, Cantidad) values (10, 3, 3, 3);
+insert into Productos (ID, Nombre, Stock, PrecioUnitario, NombreImagen, Tipo) values (1, 'Dona con glaseado azucarado', 20, 2500, 'img/works/1.png', 0); 
+insert into Productos (ID, Nombre, Stock, PrecioUnitario, NombreImagen, Tipo) values (2, 'Pan Baguette', 34, 900, 'img/works/2.png', 1);
+insert into Productos (ID, Nombre, Stock, PrecioUnitario, NombreImagen, Tipo) values (3, 'Queque de fiesta', 0, 3500, 'img/works/3.png', 0);
+insert into Productos (ID, Nombre, Stock, PrecioUnitario, NombreImagen, Tipo) values (4, 'Tortillas caseras', 15, 2800, 'img/works/4.png', 1);
+insert into Productos (ID, Nombre, Stock, PrecioUnitario, NombreImagen, Tipo) values (5, 'Tamal', 6, 4000, 'img/works/5.png', 1);
+insert into Productos (ID, Nombre, Stock, PrecioUnitario, NombreImagen, Tipo) values (6, 'Tostada francesa', 31, 2200, 'img/works/6.png', 1);
 
 
 insert into Tarjetas  (ID, Titular , FechaVencimiento, CCV, Saldo) values ('67627725926325998', 'Cinda Dowle', '2025-10-30', 357, 1053123.56);
