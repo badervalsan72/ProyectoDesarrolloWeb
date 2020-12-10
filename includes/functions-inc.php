@@ -211,7 +211,7 @@ function mostrarProductos($conn)
 							<p style="text-align:center"> <?php echo "₡", $row["PrecioUnitario"] ?> </p>
 							<!--<p> <?php echo $tipo ?> </p> -->
 						</div>
-						<button type="submit" name="catchItemID" value="<?php $row["ID"]?>" style="margin:10px;" class="btn btn-primary waves-effect waves-dark pull-center">Comprar</button>
+						<button type="submit" name="catchItemID" value="<?php echo $row["ID"]?>" style="margin:10px;" class="btn btn-primary waves-effect waves-dark pull-center">Comprar</button>
 					</div>
 				</div>
 			</div>
