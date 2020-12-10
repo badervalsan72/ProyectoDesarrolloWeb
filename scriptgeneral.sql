@@ -81,7 +81,7 @@ insert into Productos (ID, Nombre, Stock, PrecioUnitario, NombreImagen, Tipo) va
 insert into Productos (ID, Nombre, Stock, PrecioUnitario, NombreImagen, Tipo) values (3, 'Queque de fiesta', 0, 3500, 'img/works/3.png', 0);
 insert into Productos (ID, Nombre, Stock, PrecioUnitario, NombreImagen, Tipo) values (4, 'Tortillas caseras', 15, 2800, 'img/works/4.png', 1);
 insert into Productos (ID, Nombre, Stock, PrecioUnitario, NombreImagen, Tipo) values (5, 'Tamal', 6, 4000, 'img/works/5.png', 1);
-insert into Productos (ID, Nombre, Stock, PrecioUnitario, NombreImagen, Tipo) values (6, 'Tostada francesa', 31, 2200, 'img/works/6.png', 1);
+insert into Productos (ID, Nombre, Stock, PrecioUnitario, NombreImagen, Tipo) values (6, 'Tostada francesa', 31, 2200, 'img/works/6.png', 0);
 
 
 insert into Tarjetas  (ID, Titular , FechaVencimiento, CCV, Saldo) values ('67627725926325998', 'Cinda Dowle', '2025-10-30', 357, 1053123.56);

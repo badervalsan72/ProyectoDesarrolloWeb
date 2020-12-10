@@ -172,14 +172,7 @@ function mostrarProductos($conn, $value)
 {
 	// $value se encarga de decidir qué mostrar. // 0 Dulce, 1 Salado, 2 todo. 
 	
-		$sql = "SELECT * FROM Productos";
-	
-		if ($value == 0) {
-			$tipo = "dulce";
-		} else if ($value == 1) {
-			$tipo = "salado";
-		}
-
+		$sql = "SELECT * FROM Productos WHERE TIPO = $value";
 
 	$result = mysqli_query($conn, $sql);
 	// echo "<p> $result </p>"; 
@@ -187,6 +180,14 @@ function mostrarProductos($conn, $value)
 	if (mysqli_num_rows($result) > 0) {
 
 		while ($row = mysqli_fetch_assoc($result)) {
+
+			//Verifica que tipo de pan es
+			if ($value == 0) {
+				$tipo = "dulce";
+			} else if ($value == 1) {
+				$tipo = "salado";
+			}
+	
 			// echo "id: " . $row["id"] . " - Name: " . $row["firstname"] . " " . $row["lastname"] . "<br>";
 			?>
 			<div class="col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper <?php echo $tipo ?>">
@@ -202,7 +203,8 @@ function mostrarProductos($conn, $value)
 							<h5> <?php echo $row["Nombre"] ?> </h5>
 						</div>
 						<div class="editContent">
-							<p> <?php echo $row["PrecioUnitario"] ?> </p>
+							<p> <?php echo "₡", $row["PrecioUnitario"] ?> </p>
+							<p> <?php echo $tipo ?> </p>
 						</div>
 						<button type="submit" style="margin:10px;" class="btn btn-primary waves-effect waves-dark pull-center">Comprar</button>
 					</div>

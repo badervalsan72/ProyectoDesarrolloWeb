@@ -48,6 +48,7 @@
 				<div class="editContent">
 					<ul class="filter">
 						<li class="active"><a href="#" data-filter="*">Todos</a></li>
+
 						<li><a class="waves-effect waves-dark" href="#" data-filter=".dulce">Productos Dulces</a></li>
 						<li><a class="waves-effect waves-dark" href="#" data-filter=".salado">Productos Salados</a></li>
 					</ul>
@@ -58,12 +59,12 @@
 					<div id="isotope-gallery-container">
 						<!-- aquí empieza para cada producto -->
 						<?php
-							mostrarProductos($conn, 0); //dulce 
+							mostrarProductos($conn, 0); //0 es pan dulce 
 						?> 
 
 						<div id="isotope-gallery-container">
 							<?php
-								mostrarProductos($conn, 1); 
+								mostrarProductos($conn, 1); //1 es pan salado
 							?> 
 
 							
