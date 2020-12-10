@@ -168,11 +168,11 @@ function realizarSolicitud($conn, $uid, $link, $descripcion, $costo, $razonCompr
 	exit();
 }
 
-function mostrarProductos($conn, $value)
+function mostrarProductos($conn)
 {
 	// $value se encarga de decidir qué mostrar. // 0 Dulce, 1 Salado, 2 todo. 
 	
-		$sql = "SELECT * FROM Productos WHERE TIPO = $value";
+	$sql = "SELECT * FROM Productos";
 
 	$result = mysqli_query($conn, $sql);
 	// echo "<p> $result </p>"; 
@@ -182,15 +182,20 @@ function mostrarProductos($conn, $value)
 		while ($row = mysqli_fetch_assoc($result)) {
 
 			//Verifica que tipo de pan es
-			if ($value == 0) {
+		
+			$tipo; 
+			if ($row["Tipo"] == 0) {
 				$tipo = "dulce";
-			} else if ($value == 1) {
+				echo "<div class='col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper dulce'>"; 
+
+			} else if ($row["Tipo"] == 1) {
 				$tipo = "salado";
+				echo "<div class='col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper salado'>"; 
 			}
 	
 			// echo "id: " . $row["id"] . " - Name: " . $row["firstname"] . " " . $row["lastname"] . "<br>";
 			?>
-			<div class="col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper <?php echo $tipo ?>">
+			<!-- <div class="col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper"> --> 
 				<div class="gallery-item">
 					<div class="gallery-thumb">
 						<img src="<?php echo $row["NombreImagen"] ?>" class="img-responsive" alt="1st gallery Thumb">

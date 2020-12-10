@@ -6,7 +6,7 @@
 	<title>Productos</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="description" content="" />
-	<meta name="author" content="http://webthemez.com" />
+	
 	<!-- css -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection" />
@@ -35,7 +35,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
-						<h2 class="pageTitle">Productos</h2>
+						<h2 class="pageTitle">Productos VERSION DINÁMICA</h2>
 					</div>
 				</div>
 			</div>
@@ -59,21 +59,15 @@
 					<div id="isotope-gallery-container">
 						<!-- aquí empieza para cada producto -->
 						<?php
-							mostrarProductos($conn, 0); //0 es pan dulce 
-						?> 
+						mostrarProductos($conn); //0 es pan dulce 
+						?>
 
-						<div id="isotope-gallery-container">
-							<?php
-								mostrarProductos($conn, 1); //1 es pan salado
-							?> 
-
-							
-						</div>
 						<!-- /.isotope-gallery-container -->
 					</div>
 					<!-- /.row -->
 					<!-- /.container -->
 				</div>
+			</div>
 		</section>
 		<!--// End Gallery 1-2 -->
 	</div>
