@@ -35,7 +35,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
-						<h2 class="pageTitle">Productos VERSION DINÁMICA</h2>
+						<h2 class="pageTitle">Productos</h2>
 					</div>
 				</div>
 			</div>
@@ -45,6 +45,9 @@
 		<section id="gallery-1" class="content-block section-wrapper gallery-1">
 			<div class="container">
 
+				<br>
+
+				<!-- codigo que no logramos implementar correctamente
 				<div class="editContent">
 					<ul class="filter">
 						<li class="active"><a href="#" data-filter="*">Todos</a></li>
@@ -53,15 +56,20 @@
 						<li><a class="waves-effect waves-dark" href="#" data-filter=".salado">Productos Salados</a></li>
 					</ul>
 				</div>
+				-->
+
 				<!-- /.gallery-filter -->
 
 				<div class="row">
 					<div id="isotope-gallery-container">
+
+						<form action="includes/order-inc.php" method="POST" name="sentProduct" id="contactForm" novalidate>
 						<!-- aquí empieza para cada producto -->
 						<?php
 						mostrarProductos($conn); //0 es pan dulce 
 						?>
 
+						</form>
 						<!-- /.isotope-gallery-container -->
 					</div>
 					<!-- /.row -->

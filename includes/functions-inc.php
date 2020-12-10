@@ -208,10 +208,10 @@ function mostrarProductos($conn)
 							<h5> <?php echo $row["Nombre"] ?> </h5>
 						</div>
 						<div class="editContent">
-							<p> <?php echo "₡", $row["PrecioUnitario"] ?> </p>
-							<p> <?php echo $tipo ?> </p>
+							<p style="text-align:center"> <?php echo "₡", $row["PrecioUnitario"] ?> </p>
+							<!--<p> <?php echo $tipo ?> </p> -->
 						</div>
-						<button type="submit" style="margin:10px;" class="btn btn-primary waves-effect waves-dark pull-center">Comprar</button>
+						<button type="submit" name="catchItemID" value="<?php $row["ID"]?>" style="margin:10px;" class="btn btn-primary waves-effect waves-dark pull-center">Comprar</button>
 					</div>
 				</div>
 			</div>
