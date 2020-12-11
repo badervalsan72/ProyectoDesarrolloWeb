@@ -41,7 +41,7 @@
 	<section class="section-padding">
 		<div class="container">
             <div class="row">
-				<div class="col-md-6">
+				<div class="col-md-12">
 					<div class="block-heading-two">
 						<h3><span>Productos en el carrito</span></h3>
 					</div>		
@@ -104,25 +104,17 @@
 					    </div>
 
 
-                    </div>			
-			    </div>
-                <div class="col-md-6">
-					<div class="about-text">
+                    </div>	
+                    <div class="col-md-6">
+                    <div class="about-text">
 						<h3>Resumen de <span class="color">Orden</span></h3>
                         <div class="editContent">
-	                        <h5>Costo del producto 1</h5>
-                            <p>₡5000</p>
+	                        <h5">SubTotal: ₡10000</h5>
                         </div>
-                        <div class="editContent">
-	                        <h5>Costo del producto 2</h5>
-                            <p>₡5000</p>
-                        </div>
-                        <div class="editContent">
-	                        <h5>SubTotal: ₡10000</h5>
-                        </div>
-                        <button type="submit" style="margin:10px;" class="btn btn-primary waves-effect waves-dark pull-center">Proceder</button>
+                        <button type="submit" style="margin:10px" class="btn btn-primary waves-effect waves-dark pull-center">Proceder</button>
 					</div>
-				</div>
+				</div>		
+			    </div>
             </div>
 		</div>
 	</section>	
