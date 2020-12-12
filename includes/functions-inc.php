@@ -145,6 +145,7 @@ function loginUser($conn, $email, $pwd)
 		session_start();
 		$_SESSION["email"] = $email;
 		header("location: ../index.php?error=none");
+		
 		exit();
 	}
 }
@@ -171,7 +172,7 @@ function realizarSolicitud($conn, $uid, $link, $descripcion, $costo, $razonCompr
 function mostrarProductos($conn)
 {
 	// $value se encarga de decidir qué mostrar. // 0 Dulce, 1 Salado, 2 todo. 
-	
+
 	$sql = "SELECT * FROM Productos";
 
 	$result = mysqli_query($conn, $sql);
@@ -182,47 +183,46 @@ function mostrarProductos($conn)
 		while ($row = mysqli_fetch_assoc($result)) {
 
 			//Verifica que tipo de pan es
-		
-			$tipo; 
+
+			$tipo;
 			if ($row["Tipo"] == 0) {
 				$tipo = "dulce";
-				echo "<div class='col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper dulce'>"; 
-
+				echo "<div class='col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper dulce'>";
 			} else if ($row["Tipo"] == 1) {
 				$tipo = "salado";
-				echo "<div class='col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper salado'>"; 
+				echo "<div class='col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper salado'>";
 			}
-	
-			// echo "id: " . $row["id"] . " - Name: " . $row["firstname"] . " " . $row["lastname"] . "<br>";
-			?>
-			<!-- <div class="col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper"> --> 
-				<div class="gallery-item">
-					<div class="gallery-thumb">
-						<img src="<?php echo $row["NombreImagen"] ?>" class="img-responsive" alt="1st gallery Thumb">
-						<div class="image-overlay"></div>
-						<a href="<?php echo $row["NombreImagen"] ?>" class="gallery-zoom"><i class="fa fa-eye"></i></a>
 
+			// echo "id: " . $row["id"] . " - Name: " . $row["firstname"] . " " . $row["lastname"] . "<br>";
+?>
+			<!-- <div class="col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper"> -->
+			<div class="gallery-item">
+				<div class="gallery-thumb">
+					<img src="<?php echo $row["NombreImagen"] ?>" class="img-responsive" alt="1st gallery Thumb">
+					<div class="image-overlay"></div>
+					<a href="<?php echo $row["NombreImagen"] ?>" class="gallery-zoom"><i class="fa fa-eye"></i></a>
+
+				</div>
+				<div class="gallery-details">
+					<div class="editContent">
+						<h5> <?php echo $row["Nombre"] ?> </h5>
 					</div>
-					<div class="gallery-details">
-						<div class="editContent">
-							<h5> <?php echo $row["Nombre"] ?> </h5>
-						</div>
-						<div class="editContent">
-							<p style="text-align:center"> <?php echo "₡", $row["PrecioUnitario"] ?> </p>
-							<!--<p> <?php echo $tipo ?> </p> -->
-						</div>
-						<button type="submit" name="catchItemID" value="<?php echo $row["ID"]?>" style="margin:10px;" class="btn btn-primary waves-effect waves-dark pull-center">Comprar</button>
+					<div class="editContent">
+						<p style="text-align:center"> <?php echo "₡", $row["PrecioUnitario"] ?> </p>
+						<!--<p> <?php echo $tipo ?> </p> -->
 					</div>
+					<button type="submit" name="catchItemID" value="<?php echo $row["ID"] ?>" style="margin:10px;" class="btn btn-primary waves-effect waves-dark pull-center">Comprar</button>
 				</div>
 			</div>
-			<?php
+			</div>
+		<?php
 		}
 	} else if (mysqli_num_rows($result) == false) {
-		echo "<p> FALSO </p>"; 
+		echo "<p> FALSO </p>";
 	}
 
 	mysqli_close($conn);
-	exit(); 
+	exit();
 	/*
 	$stmt = mysqli_stmt_init($conn);
 	if (!mysqli_stmt_prepare($stmt, $sql)) {
@@ -236,4 +236,90 @@ function mostrarProductos($conn)
 	mysqli_stmt_close($stmt);
 	mysqli_close($conn);
 	exit(); 	*/
+}
+
+function mostrarCarrito($conn, $arr)
+{
+	// session_start(); 
+
+	// echo "<p> $result </p>"; 
+	$tempArray = $arr; 
+	$total = 0;  // la función retorna este valor. 
+	print_r($tempArray); 
+	
+	
+	for ($i = 1; $i < sizeof($tempArray); $i++) {
+
+		$id = $tempArray[$i];
+
+		$sql = "SELECT * FROM Productos where ID=$id";
+
+		$result = mysqli_query($conn, $sql);
+
+		$row = mysqli_fetch_assoc($result); // si falla, poner dentro de while 
+
+		// hay un problema con la lógica 
+		?>
+		<div class="panel">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<!-- <a data-toggle="collapse" data-parent="#accordion-alt3" href="#collapseTwo-alt3"> 					
+					</a> --> 
+					<?php echo $row["Nombre"] ?>
+				</h4>
+			</div>
+			<!-- <div id="<?php echo "collapse" . $row["ID"] . "-alt3" ?>" class="panel-collapse collapse"> --> 
+			<div id="<?php echo "collapse" . $row["ID"] . "-alt3" ?>" class="panel">
+				<!-- Panel body -->
+				<div class="panel-body">
+					<div class="col-md-6">
+						<div class="gallery-item">
+							<div class="gallery-thumb">
+								<img src="<?php echo $row["NombreImagen"] ?>" class="img-responsive" alt="1st gallery Thumb">
+							</div>
+							<div class="editContent">
+								<h5> <?php echo $row["Nombre"] ?> </h5>
+								<p><?php echo "Precio Unitario: ₡", $row["PrecioUnitario"] ?></p>
+
+								<?php
+								$cantidadProducto = 0;
+
+								for ($j = 1; $j < sizeof($arr); $j++) {
+
+									$jd = $arr[$j];
+
+									if ($id == $jd) {
+										$cantidadProducto++;
+										// ($tempArray, $i, 1); // aquí tiene que estar el error 
+										echo "<p> $id es igual a $jd </p>"; 
+										echo "<p> borrando $tempArray[$j] </p>"; 
+										unset($tempArray[$j]);
+										$i = 1;  
+									}
+									else {
+										echo "<p> $id no es igual a $jd </p>"; 
+									}
+								}
+								$subtotal = $row["PrecioUnitario"] * $cantidadProducto;
+								$total += $subtotal; 
+								?>
+								<p><?php echo "Cantidad seleccionada: ", $cantidadProducto ?> </p>
+								<p><?php echo "Subtotal: ₡", $subtotal ?></p>
+							</div>
+							<button type="submit" style="margin:10px;" class="btn btn-primary waves-effect waves-dark pull-center">Eliminar</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<?php
+
+	}
+	print_r($tempArray); 
+	echo "<br>";
+	print_r($arr); 
+
+	mysqli_close($conn);
+	exit();
+	return $total; 
 }

@@ -62,7 +62,7 @@
 
 				<div class="row">
 					<div id="isotope-gallery-container">
-
+						
 						<form action="includes/order-inc.php" method="POST" name="sentProduct" id="contactForm" novalidate>
 						<!-- aquí empieza para cada producto -->
 						<?php

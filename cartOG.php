@@ -27,10 +27,7 @@
 		<!-- start header -->
 		<?php
 		include "header.php";
-		include "includes/dbh-inc.php";
-		include "includes/functions-inc.php";
 		?>
-
 
 		<section id="inner-headline">
 			<div class="container">
@@ -51,16 +48,67 @@
 							<!-- Accordion starts -->
 							<div class="panel-group" id="accordion-alt3">
 								<!-- Panel. Use "panel-XXX" class for different colors. Replace "XXX" with color. -->
-								<?php
+								<div class="panel">
+									<!-- Panel heading -->
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<!-- <a data-toggle="collapse" data-parent="#accordion-alt3" href="#collapseOne-alt3"> 
+												<i class="fa fa-angle-right"></i> Producto 1
+											</a> --> Producto 1
+										</h4>
+									</div>
+									<div id="collapseOne-alt3" class="panel">
+										<!-- Panel body -->
+										<div class="panel-body">
+											<div class="col-md-6">
+												<div class="gallery-item">
+													<div class="gallery-thumb">
+														<img src="img/works/1.png" class="img-responsive" alt="1st gallery Thumb">
+													</div>
+													<div class="editContent">
+														<h5>Dona con glaseado azucarado</h5>
+														<p>₡5000</p>
+													</div>
+													<button type="submit" style="margin:10px;" class="btn btn-primary waves-effect waves-dark pull-center">Eliminar</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="panel">
+									<!-- Panel heading -->
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<!-- <a data-toggle="collapse" data-parent="#accordion-alt3" href="#collapseTwo-alt3">  
+												<i class="fa fa-angle-right"></i> Producto 2 -->
+											Producto 2
+											</a>
+										</h4>
+									</div>
+									<div id="collapseTwo-alt3" class="panel">
+										<!-- Panel body -->
+										<div class="panel-body">
+											<div class="col-md-6">
+												<div class="gallery-item">
+													<div class="gallery-thumb">
+														<img src="img/works/1.png" class="img-responsive" alt="1st gallery Thumb">
+													</div>
+													<div class="editContent">
+														<h5>Dona con glaseado azucarado</h5>
+														<p>₡5000</p>
+													</div>
+													<button type="submit" style="margin:10px;" class="btn btn-primary waves-effect waves-dark pull-center">Eliminar</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
 
-								$total = mostrarCarrito($conn, $_SESSION['productList']);
-								?>
 
 							</div>
-							
 							<div class="col-md-12 text-center">
 								<div class="about-text">
-									<h3>Total: <span class="color"> <?php echo $total ?> </span></h3>
+									<h3>Total: <span class="color"> [MONTO] </span></h3>
 
 									<button type="submit" style="margin:10px" class="btn btn-primary waves-effect waves-dark pull-center">Proceder</button>
 								</div>
@@ -69,7 +117,6 @@
 					</div>
 				</div>
 			</section>
-		</section>
 
 
 	</div>
