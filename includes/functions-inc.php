@@ -258,7 +258,7 @@ function mostrarCarrito($conn, $arr)
 
 		$row = mysqli_fetch_assoc($result); // si falla, poner dentro de while 
 
-		// hay un problema con la lógica 
+		// hay un problema con la lógica, el problema está en el for externo y el cómo aumenta i y disminuye el sizeof
 		?>
 		<div class="panel">
 			<div class="panel-heading">
@@ -294,7 +294,7 @@ function mostrarCarrito($conn, $arr)
 										echo "<p> $id es igual a $jd </p>"; 
 										echo "<p> borrando $tempArray[$j] </p>"; 
 										unset($tempArray[$j]);
-										$i = 1;  
+										//$i = 1;  
 									}
 									else {
 										echo "<p> $id no es igual a $jd </p>"; 
@@ -302,9 +302,10 @@ function mostrarCarrito($conn, $arr)
 								}
 								$subtotal = $row["PrecioUnitario"] * $cantidadProducto;
 								$total += $subtotal; 
+								$i = 1; 
 								?>
 								<p><?php echo "Cantidad seleccionada: ", $cantidadProducto ?> </p>
-								<p><?php echo "Subtotal: ₡", $subtotal ?></p>
+								<p><?php echo "Subtotal: ₡", $subtotal ?></p> 
 							</div>
 							<button type="submit" style="margin:10px;" class="btn btn-primary waves-effect waves-dark pull-center">Eliminar</button>
 						</div>
@@ -315,6 +316,8 @@ function mostrarCarrito($conn, $arr)
 		<?php
 
 	}
+	echo "<p>i: $i </p>";
+	echo "<br>";
 	print_r($tempArray); 
 	echo "<br>";
 	print_r($arr); 
