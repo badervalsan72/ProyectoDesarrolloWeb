@@ -57,7 +57,7 @@
 								} else {
 									//echo "<script type='text/javascript'>alert('Primero debe de elegir productos!');</script>";
 
-									header("location: order.php?error=NoProductList"); //Si comento esto, sale el boton que de otra forma no sale
+									//header("location: order.php?error=NoProductList"); //Si comento esto, sale el boton que de otra forma no sale
 								}
 								?>
 
