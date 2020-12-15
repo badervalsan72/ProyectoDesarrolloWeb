@@ -23,8 +23,8 @@
                             echo "<li class='active'><a class='waves-effect waves-dark' href='logout.php'>Cerrar Sesión</a></li>"; 
                         }
                         else {
-                            echo "<li><a class='waves-effect waves-dark' href='login.php'>Ordenar aqui</a></li>";
-                            echo "<li><a class='waves-effect waves-dark' href='login.php'>Carrito de Compras</a></li>";
+                            echo "<li><a class='waves-effect waves-dark' href='login.php?error=NoLogin'>Ordenar aqui</a></li>";
+                            echo "<li><a class='waves-effect waves-dark' href='login.php?error=NoLogin'>Carrito de Compras</a></li>";
 
                             echo "<li class='active'><a class='waves-effect waves-dark' href='login.php'>Iniciar Sesión</a></li>"; 
                         }                        

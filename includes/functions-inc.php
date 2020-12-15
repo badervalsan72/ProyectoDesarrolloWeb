@@ -245,10 +245,12 @@ function mostrarCarrito($conn, $arr)
 	// echo "<p> $result </p>"; 
 	$tempArray = $arr; 
 	$total = 0;  // la función retorna este valor. 
-	print_r($tempArray); 
+	//print_r($tempArray); 
 	
 	
-	for ($i = 1; $i < sizeof($tempArray); $i++) {
+	//for ($i = 1; $i < sizeof($tempArray); $i++) { ***NO SIRVE***
+	$i = 1;
+	while (sizeof($tempArray) > 1) {
 
 		$id = $tempArray[$i];
 
@@ -290,22 +292,21 @@ function mostrarCarrito($conn, $arr)
 
 									if ($id == $jd) {
 										$cantidadProducto++;
-										// ($tempArray, $i, 1); // aquí tiene que estar el error 
-										echo "<p> $id es igual a $jd </p>"; 
-										echo "<p> borrando $tempArray[$j] </p>"; 
-										unset($tempArray[$j]);
+										array_splice($tempArray, $i, 1); // aquí tiene que estar el error 
+										//echo "<p> $id es igual a $jd </p>"; 
+										//echo "<p> borrando $tempArray[$j] </p>"; 
+										//unset($tempArray[$j]);
 										//$i = 1;  
 									}
 									else {
-										echo "<p> $id no es igual a $jd </p>"; 
+										//echo "<p> $id no es igual a $jd </p>"; 
 									}
 								}
 								$subtotal = $row["PrecioUnitario"] * $cantidadProducto;
-								$total += $subtotal; 
-								$i = 1; 
+								$total += $subtotal;  
 								?>
-								<p><?php echo "Cantidad seleccionada: ", $cantidadProducto ?> </p>
-								<p><?php echo "Subtotal: ₡", $subtotal ?></p> 
+								<p><?php echo "Cantidad seleccionada: ". $cantidadProducto ?></p>
+								<p><?php echo "Subtotal: ₡". $subtotal ?></p> 
 							</div>
 							<button type="submit" style="margin:10px;" class="btn btn-primary waves-effect waves-dark pull-center">Eliminar</button>
 						</div>
@@ -314,13 +315,13 @@ function mostrarCarrito($conn, $arr)
 			</div>
 		</div>
 		<?php
-
+		//$i++;
 	}
-	echo "<p>i: $i </p>";
+	/*echo "<p>i: $i </p>";
 	echo "<br>";
 	print_r($tempArray); 
 	echo "<br>";
-	print_r($arr); 
+	print_r($arr);*/
 
 	mysqli_close($conn);
 	exit();

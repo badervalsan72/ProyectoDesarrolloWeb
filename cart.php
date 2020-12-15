@@ -52,23 +52,22 @@
 							<div class="panel-group" id="accordion-alt3">
 								<!-- Panel. Use "panel-XXX" class for different colors. Replace "XXX" with color. -->
 								<?php
-								if (isset($_SESSION["productList"])) {   
+								if (isset($_SESSION["productList"])) {
 									$total = mostrarCarrito($conn, $_SESSION['productList']);
 								} else {
 									//echo "<script type='text/javascript'>alert('Primero debe de elegir productos!');</script>";
 
-									//header("location: order.php?error=NoProductList"); //Si comento esto, sale el boton que de otra forma no sale
+									header("location: order.php?error=NoProductList"); //Si comento esto, sale el boton que de otra forma no sale
 								}
 								?>
-
 							</div>
-							
-							<div class="col-md-6">
-								<div class="about-text">
-									<h3>Total: <span class="color"> <?php echo $total ?> </span></h3>
+						</div>
+						<div class="col-md-12 text-align: right">
+							<!--NO SE MUESTRA ESTE BOTON CON EL SUBTOTAL EN LA INTERFAZ-->
+							<div class="about-text">
+								<h3>Total: <span class="color"> <?php echo $total ?> </span></h3>
 
-									<button type="submit" style="margin:10px" class="btn btn-primary waves-effect waves-dark pull-center">Proceder</button>
-								</div>
+								<button type="submit" style="margin:10px" class="btn btn-primary waves-effect waves-dark pull-center">Proceder</button>
 							</div>
 						</div>
 					</div>
