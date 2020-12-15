@@ -305,11 +305,11 @@ function mostrarCarrito($conn, $arr)
 				</div>
 			</div>
 		</div>
-		<hr style="border-color: black;">
+		<!--<hr style="border-color: black;">-->
 	<?php
 	}
 	?>
-	<div class="col-md-4" style="background-color: #de8c63;">
+	<div class="col-md-4" style="background-color: #de8c63">
 		<div class="about-text">
 			<h3 style="color: white;">Resumen</h3>
 			<hr style="border-color: white">
