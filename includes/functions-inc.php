@@ -92,7 +92,7 @@ function uidExists($conn, $email)
 
 function createUser($conn, $cedula, $name, $email, $apellido1, $apellido2, $pwd)
 {
-	// id, nombre, ap1, ap2, pwd, desc, correo 
+	// id, nombre, ap1, ap2, pwd, desc, correo
 	$sql = "INSERT INTO Usuarios (ID, Nombre, Apellido1, Apellido2, Contrasena, Descuento, Correo) VALUES (?, ?, ?, ?, ?, ?, ?);";
 	$descuento = 0;
 	$stmt = mysqli_stmt_init($conn);
@@ -145,7 +145,7 @@ function loginUser($conn, $email, $pwd)
 		session_start();
 		$_SESSION["email"] = $email;
 		header("location: ../index.php?error=none");
-		
+
 		exit();
 	}
 }
@@ -171,12 +171,12 @@ function realizarSolicitud($conn, $uid, $link, $descripcion, $costo, $razonCompr
 
 function mostrarProductos($conn)
 {
-	// $value se encarga de decidir qué mostrar. // 0 Dulce, 1 Salado, 2 todo. 
+	// $value se encarga de decidir qué mostrar. // 0 Dulce, 1 Salado, 2 todo.
 
 	$sql = "SELECT * FROM Productos";
 
 	$result = mysqli_query($conn, $sql);
-	// echo "<p> $result </p>"; 
+	// echo "<p> $result </p>";
 
 	if (mysqli_num_rows($result) > 0) {
 
@@ -229,7 +229,7 @@ function mostrarProductos($conn)
 	 	header("location: ../order.php?error=stmtfailed");
 		exit();
 	}
-	
+
 	// mysqli_stmt_bind_param($stmt, "ississ", $uid, $link, $descripcion, $costo, $razonCompra, $estado);
 	mysqli_stmt_execute($stmt);
 	$resultData = mysqli_stmt_get_result($stmt);
@@ -240,14 +240,14 @@ function mostrarProductos($conn)
 
 function mostrarCarrito($conn, $arr)
 {
-	// session_start(); 
+	// session_start();
 
-	// echo "<p> $result </p>"; 
-	$tempArray = $arr; 
-	$total = 0;  // la función retorna este valor. 
-	//print_r($tempArray); 
-	
-	
+	// echo "<p> $result </p>";
+	$tempArray = $arr;
+	$total = 0;  // la función retorna este valor.
+	//print_r($tempArray);
+
+
 	//for ($i = 1; $i < sizeof($tempArray); $i++) { ***NO SIRVE***
 	$i = 1;
 	while (sizeof($tempArray) > 1) {
@@ -258,72 +258,74 @@ function mostrarCarrito($conn, $arr)
 
 		$result = mysqli_query($conn, $sql);
 
-		$row = mysqli_fetch_assoc($result); // si falla, poner dentro de while 
+		$row = mysqli_fetch_assoc($result); // si falla, poner dentro de while
 
 		// hay un problema con la lógica, el problema está en el for externo y el cómo aumenta i y disminuye el sizeof
 		?>
-		<div class="panel">
-			<div class="panel-heading">
-				<h4 class="panel-title">
-					<!-- <a data-toggle="collapse" data-parent="#accordion-alt3" href="#collapseTwo-alt3"> 					
-					</a> --> 
-					<?php echo $row["Nombre"] ?>
-				</h4>
-			</div>
-			<!-- <div id="<?php echo "collapse" . $row["ID"] . "-alt3" ?>" class="panel-collapse collapse"> --> 
-			<div id="<?php echo "collapse" . $row["ID"] . "-alt3" ?>" class="panel">
-				<!-- Panel body -->
-				<div class="panel-body">
-					<div class="col-md-6">
+		<!-- Accordion starts -->
+		<div class="panel-group" id="accordion-alt3">
+			<!-- Panel body -->
+			<div class="panel-body">
+				<div class="col-md-6">
+					<div class="col-md-8">
 						<div class="gallery-item">
 							<div class="gallery-thumb">
 								<img src="<?php echo $row["NombreImagen"] ?>" class="img-responsive" alt="1st gallery Thumb">
 							</div>
-							<div class="editContent">
-								<h5> <?php echo $row["Nombre"] ?> </h5>
-								<p><?php echo "Precio Unitario: ₡", $row["PrecioUnitario"] ?></p>
-
-								<?php
-								$cantidadProducto = 0;
-
-								for ($j = 1; $j < sizeof($arr); $j++) {
-
-									$jd = $arr[$j];
-
-									if ($id == $jd) {
-										$cantidadProducto++;
-										array_splice($tempArray, $i, 1); // aquí tiene que estar el error 
-										//echo "<p> $id es igual a $jd </p>"; 
-										//echo "<p> borrando $tempArray[$j] </p>"; 
-										//unset($tempArray[$j]);
-										//$i = 1;  
-									}
-									else {
-										//echo "<p> $id no es igual a $jd </p>"; 
-									}
-								}
-								$subtotal = $row["PrecioUnitario"] * $cantidadProducto;
-								$total += $subtotal;  
-								?>
-								<p><?php echo "Cantidad seleccionada: ". $cantidadProducto ?></p>
-								<p><?php echo "Subtotal: ₡". $subtotal ?></p> 
-							</div>
-							<button type="submit" style="margin:10px;" class="btn btn-primary waves-effect waves-dark pull-center">Eliminar</button>
 						</div>
+					</div>
+					<div class="col-md-4" style="float: right;">
+						<h5><?php echo $row["Nombre"] ?> </h5>
+						<p><?php echo "Precio Unitario: ₡", $row["PrecioUnitario"] ?></p>
+
+						<?php
+						$cantidadProducto = 0;
+
+						for ($j = 1; $j < sizeof($arr); $j++) {
+
+							$jd = $arr[$j];
+
+							if ($id == $jd) {
+								$cantidadProducto++;
+								array_splice($tempArray, $i, 1); // aquí tiene que estar el error
+								//echo "<p> $id es igual a $jd </p>";
+								//echo "<p> borrando $tempArray[$j] </p>";
+								//unset($tempArray[$j]);
+							} else {
+								//echo "<p> $id no es igual a $jd </p>";
+							}
+						}
+						$subtotal = $row["PrecioUnitario"] * $cantidadProducto;
+						$total += $subtotal;
+						?>
+						<p><?php echo "Cantidad seleccionada: " . $cantidadProducto ?></p>
+						<p><?php echo "Subtotal: ₡" . $subtotal ?></p>
+						<button type="submit" style="margin:10px;" class="btn btn-primary waves-effect waves-dark pull-center">Eliminar</button>
 					</div>
 				</div>
 			</div>
 		</div>
-		<?php
-		//$i++;
+		<hr style="border-color: black;">
+	<?php
 	}
+	?>
+	<div class="col-md-4" style="background-color: #de8c63;">
+		<div class="about-text">
+			<h3 style="color: white;">Resumen</h3>
+			<hr style="border-color: white">
+			<h5 style="color: white;">Total: <?php echo $total ?></h4>
+				<hr style="border-color: white">
+				<button type="submit" style="margin:10px" class="btn btn-primary waves-effect waves-dark pull-center">Proceder</button>
+		</div>
+	</div>
+<?php
 	/*echo "<p>i: $i </p>";
 	echo "<br>";
-	print_r($tempArray); 
+	print_r($tempArray);
 	echo "<br>";
 	print_r($arr);*/
 
 	mysqli_close($conn);
 	exit();
-	return $total; 
+	return $total;
 }
