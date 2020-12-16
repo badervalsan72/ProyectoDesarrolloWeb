@@ -38,10 +38,16 @@ if (isset($_POST["submit"])) {
     header("location: ../login.php?error=uidlength");
 		exit();
   }
-  // Is the username taken already
+  /* Is the username taken already
   if (uidExists($conn, $cedula) !== false) {
     header("location: ../login.php?error=usernametaken");
 		exit();
+  }*/
+
+  //Verificamos que no sea una multicuenta usando el mismo correo
+  if (uidExists($conn, $email) !== false) {
+    header("location: ../login.php?error=UserAlredyExists");
+    exit();
   }
 
   // Now we insert the user into the database

@@ -43,7 +43,7 @@
 						<!-- Form itself -->
 						<form action="includes/login-inc.php" method="POST" name="sentMessage" id="contactForm" novalidate>
 							<div class="input-field">
-								<input type="email" class="form-control" id="email" name="email_login" required data-validation-required-message="Por favor introduzca su correo"/>
+								<input type="email" class="form-control" id="email" name="email_login" required data-validation-required-message="Por favor introduzca su correo" />
 								<label for="email" class=""> Email </label>
 							</div>
 							<div class="input-field">
@@ -106,9 +106,9 @@
 	</div>
 
 	<?php
-    // ERRORES DEL SIGNUP
-    if (isset($_GET["error"])) {
-		switch($_GET["error"]) {
+	// ERRORES DEL SIGNUP
+	if (isset($_GET["error"])) {
+		switch ($_GET["error"]) {
 			case "emptyinput":
 				echo "<script type='text/javascript'>alert('Por favor, rellene los espacios!');</script>";
 				break;
@@ -127,11 +127,14 @@
 			case "usernametaken":
 				echo "<script type='text/javascript'>alert('El usuario ya existe!');</script>";
 				break;
-			case "none":
-				echo "<script type='text/javascript'>alert('Usuario registrado!');</script>";
-				break;
 			case "uidlength":
 				echo "<script type='text/javascript'>alert('Su cédula debe tener 9 dígitos!');</script>";
+				break;
+			case "UserAlredyExists":
+				echo "<script type='text/javascript'>alert('Ya hay un usuario registrado con este correo!');</script>";
+				break;
+			case "none":
+				echo "<script type='text/javascript'>alert('Usuario registrado!');</script>";
 				break;
 			default:
 				break;
@@ -162,8 +165,8 @@
         echo "<script type='text/javascript'>alert('Su cédula debe tener 9 dígitos!');</script>";
       } */
 	}
-	
-  ?>
+
+	?>
 
 	<a href="#" class="scrollup waves-effect waves-dark"><i class="fa fa-angle-up active"></i></a>
 	<!-- javascript

@@ -12,14 +12,13 @@ if (isset($_POST["submit"])) {
 
   if (emptyInputLogin($email, $pwd) === true) {
     header("location: ../login.php?error=emptyinput");
-		exit();
+    exit();
   }
+
 
   loginUser($conn, $email, $pwd);
 
-
-
 } else {
-	header("location: ../login.php?error=nosubmit");
-    exit();
+  header("location: ../login.php?error=nosubmit");
+  exit();
 }
