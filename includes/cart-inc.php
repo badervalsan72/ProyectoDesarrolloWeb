@@ -1,4 +1,5 @@
 <?php
+        /*
         if(array_key_exists('button1', $_POST)) { 
             button1(); 
         } 
@@ -11,4 +12,10 @@
         function button2() { 
             echo "This is Button2 that is selected"; 
         } 
+        */
+
+    function eliminar($i) {
+        print_r("hola" . $i); 
+        array_splice($_SESSION["productList"], $i, 1); 
+    }
     ?> 
