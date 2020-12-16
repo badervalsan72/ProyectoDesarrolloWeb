@@ -335,7 +335,7 @@ function mostrarCarrito($conn, $arr)
 	return $total;
 }
 
-/*function verif_Tarjeta($conn, $num_tarjeta, $titular, $csv, $fecha)
+function verif_Tarjeta($conn, $num_tarjeta, $titular, $csv, $fecha)
 {
 	// $sql = "SELECT * FROM Usuarios WHERE Correo = ?;";
 	$sql = "SELECT * FROM Tarjetas where ID = ? AND TITULAR = ? AND CSV = ? AND FECHAVENCIMIENTO = ?";
@@ -354,12 +354,14 @@ function mostrarCarrito($conn, $arr)
 	$resultData = mysqli_stmt_get_result($stmt);
 
 	if ($row = mysqli_fetch_assoc($resultData)) {
-		
+		session_start(); 
 		if ($row["Saldo"] > $_SESSION["total"]) {
 			
 			$total = $_SESSION["total"]; 
 			
-			$updateTarjeta = "UPDATE Tarjetas SET Saldo -= $total WHERE ID = $num_tarjeta"; 
+			// $updateTarjeta = "UPDATE Tarjetas SET Saldo -= $total WHERE ID = $num_tarjeta"; 
+			
+			
 			$i = 1;
 
 			$stmt2 = mysqli_stmt_init($conn);
@@ -371,29 +373,29 @@ function mostrarCarrito($conn, $arr)
 				if (mysqli_num_rows($resultTempQuery) == 0) {
 					$CreateOrdenQuery = "INSERT INTO Ordenes (ID, CorreoUsuario, Fecha, EstadoEntrega) VALUES (?, ?, ?, ?); ";
 					
-					if (!mysqli_stmt_prepare($stmt2, $CreateOrdenQuery)) {
-						header("location: ../checkout.php?error=stmtfailedCreateOrder");
-						exit();
-					}
 					$email = $_SESSION["email"]; 
 					$currentDateTime = date('Y-m-d');
 					$zero = 0; 
+					if (!mysqli_stmt_prepare($stmt2, $CreateOrdenQuery)) {
+						header("location: ../checkout.php?error=stmtfailedCreateOrder" . $email . $currentDateTime . $zero);
+						exit();
+					}
+					
 					mysqli_stmt_bind_param($stmt2, "issi", $i, $email, $currentDateTime, $zero); 
 					mysqli_stmt_execute($stmt2);
 					mysqli_stmt_close($stmt2);
-					
-					// exit(); 					
+					 					
 				}
 				else {
 					$i++; 
 				}
 			}
 			while (mysqli_num_rows($resultTempQuery) == 0);
+			$imenor = $i - 1; 
 			
-			$stmt3 = mysqli_stmt_init($conn);
 			$products = $_SESSION["productList"]; 
 			for ($x = 1; $x < sizeof($products); $x++) {
-				
+				$stmt3 = mysqli_stmt_init($conn);
 				$idProducto = $products[$x];
 				if ($idProducto > 0) {
 
@@ -411,24 +413,37 @@ function mostrarCarrito($conn, $arr)
 
 					
 					if (!mysqli_stmt_prepare($stmt3, $insertOrdenEsp)) {
-						header("location: ../login.php?error=stmtfailedInsertOrdenEsp");
+						header("location: ../checkout.php?error=stmtfailedInsertOrdenEsp" . "_" . $imenor . "_" . $idProducto . "_" . $cantidadProductoOE);
 						exit();
 					}
-					$IDORden = $i . $x; 
-					mysqli_stmt_bind_param($stmt3, "iii", $IDORden, $idProducto, $cantidadProductoOE);
+					
+					mysqli_stmt_bind_param($stmt3, "iii", $imenor, $idProducto, $cantidadProductoOE);
 					mysqli_stmt_execute($stmt3);
 					mysqli_stmt_close($stmt3);
-					header("location: ../checkout.php?error=ProductosAgregadosAOrdenEspecial");
-					exit();
+					// header("location: ../checkout.php?error=ProductosAgregadosAOrdenEspecial");
+					// exit();
 
 				} 
 			 
 			
 			}
+			
+			$updateTarjeta = "UPDATE Tarjetas SET Saldo -= ? WHERE ID = ?"; 
+			$stmtTarjeta = mysqli_stmt_init($conn);
+			if (!mysqli_stmt_prepare($stmtTarjeta, $updateTarjeta)) {
+				header("location: ../checkout.php?error=stmtfailedPagoTarjeta");
+				exit();
+			}
+			mysqli_stmt_bind_param($stmtTarjeta, "ii", $total, $num_tarjeta);
+			mysqli_stmt_execute($stmtTarjeta);
+			mysqli_stmt_close($stmtTarjeta);
+	
 			header("location: ../checkout.php?error=TransaccionExitosa");
+			exit();
 		}
 		else {
 			header("location: ../checkout.php?error=NoMoney");
+			exit();
 		}
 		
 		exit();

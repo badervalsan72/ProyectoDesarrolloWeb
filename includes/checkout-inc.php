@@ -12,7 +12,7 @@ if (isset($_POST["submit"])) {
     require_once 'functions-inc.php';
 
     verif_Tarjeta($conn, $num_tarjeta, $titular, $csv, $fecha);
-
+    
 } else {
     header("location: ../login.php?error=nosubmit");
     exit();
