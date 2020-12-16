@@ -41,7 +41,7 @@
 
 		<section id="content">
 			<section class="section-padding">
-				<div class="container display: flex; justify-content: center">
+				<div class="container">
 					<div class="row">
 						<div class="col-md-8">
 							<?php
