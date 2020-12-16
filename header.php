@@ -20,7 +20,7 @@
                         if (isset($_SESSION["email"])) {              
                             echo "<li><a class='waves-effect waves-dark' href='order.php'>Ordenar aquí</a></li>";
                             echo "<li><a class='waves-effect waves-dark' href='cart.php'>Carrito de Compras</a></li>";          
-                            echo "<li class='active'><a class='waves-effect waves-dark' href='checkout.php'>Pagar</a></li>";
+                            //echo "<li class='active'><a class='waves-effect waves-dark' href='checkout.php'>Pagar</a></li>";
                             echo "<li class='active'><a class='waves-effect waves-dark' href='logout.php'>Cerrar Sesión</a></li>";
                         }
                         else {

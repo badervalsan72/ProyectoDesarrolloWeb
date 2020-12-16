@@ -263,9 +263,9 @@ function mostrarCarrito($conn, $arr)
 
 			if (isset($_POST['eliminar' . $row["ID"]])) {
 				eliminar($i);
-				echo "<p> HOLA </p>";
+				//echo "<p> HOLA </p>";
 			} else {
-				echo "<p> ADIOS </p>";
+				//echo "<p> ADIOS </p>";
 			}
 		?>
 			<form action="" method="POST" novalidate>
@@ -320,7 +320,9 @@ function mostrarCarrito($conn, $arr)
 			<hr style="border-color: white">
 			<h5 style="color: white;">Total: <?php echo $total ?></h4>
 				<hr style="border-color: white">
-				<button type="submit" style="margin:10px" class="btn btn-primary waves-effect waves-dark pull-center">Proceder</button>
+				<form action="location: ../checkout.php">
+					<button type="submit" style="margin:10px" class="btn btn-primary waves-effect waves-dark pull-center">Proceder</button>
+				</form>
 		</div>
 	</div>
 <?php
@@ -338,12 +340,13 @@ function mostrarCarrito($conn, $arr)
 }
 
 
-function verif_Tarjeta($conn, $num_tarjeta, $titular, $csv, $fecha) {
+function verif_Tarjeta($conn, $num_tarjeta, $titular, $csv, $fecha)
+{
 	// $sql = "SELECT * FROM Usuarios WHERE Correo = ?;";
 	$sql = "SELECT * FROM Tarjetas where ID = ? AND TITULAR = ? AND CSV = ? AND FECHAVENCIMIENTO = ?";
-	
+
 	$stmt = mysqli_stmt_init($conn);
-	
+
 	if (!mysqli_stmt_prepare($stmt, $sql)) {
 		header("location: ../checkout.php?error=stmtfailedforCard");
 		exit();
@@ -352,7 +355,7 @@ function verif_Tarjeta($conn, $num_tarjeta, $titular, $csv, $fecha) {
 	mysqli_stmt_bind_param($stmt, "isis", $num_tarjeta, $titular, $csv, $fecha);
 	mysqli_stmt_execute($stmt);
 
-	
+
 	$resultData = mysqli_stmt_get_result($stmt);
 
 	if ($row = mysqli_fetch_assoc($resultData)) {
