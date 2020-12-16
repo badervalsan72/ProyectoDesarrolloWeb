@@ -320,7 +320,7 @@ function mostrarCarrito($conn, $arr)
 			<hr style="border-color: white">
 			<h5 style="color: white;">Total: <?php echo $total ?></h4>
 				<hr style="border-color: white">
-				<form action="location: ../checkout.php">
+				<form action="checkout.php">
 					<button type="submit" style="margin:10px" class="btn btn-primary waves-effect waves-dark pull-center">Proceder</button>
 				</form>
 		</div>
@@ -335,8 +335,7 @@ function mostrarCarrito($conn, $arr)
 	return $total;
 }
 
-
-function verif_Tarjeta($conn, $num_tarjeta, $titular, $csv, $fecha)
+/*function verif_Tarjeta($conn, $num_tarjeta, $titular, $csv, $fecha)
 {
 	// $sql = "SELECT * FROM Usuarios WHERE Correo = ?;";
 	$sql = "SELECT * FROM Tarjetas where ID = ? AND TITULAR = ? AND CSV = ? AND FECHAVENCIMIENTO = ?";
@@ -384,6 +383,5 @@ function verif_Tarjeta($conn, $num_tarjeta, $titular, $csv, $fecha)
 		header("location: ../checkout.php?error=invalidCard");
 		exit();
 	}
-
 	mysqli_stmt_close($stmt);
 }
