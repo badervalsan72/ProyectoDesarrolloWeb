@@ -209,7 +209,7 @@ function mostrarProductos($conn)
 					</div>
 					<div class="editContent">
 						<p style="text-align:center"> <?php echo "₡", $row["PrecioUnitario"] ?> </p>
-						<!--<p> <?php echo $tipo ?> </p> -->
+						
 					</div>
 					<button type="submit" name="catchItemID" value="<?php echo $row["ID"] ?>" style="margin:10px;" class="btn btn-primary waves-effect waves-dark pull-center">Comprar</button>
 				</div>
@@ -263,9 +263,9 @@ function mostrarCarrito($conn, $arr)
 
 			if (isset($_POST['eliminar' . $row["ID"]])) {
 				eliminar($i);
-				echo "<p> HOLA </p>";
+				
 			} else {
-				echo "<p> ADIOS </p>";
+				
 			}
 		?>
 			<form action="" method="POST" novalidate>
@@ -310,7 +310,7 @@ function mostrarCarrito($conn, $arr)
 				</div>
 			</form>
 
-	<?php
+			<?php
 		}
 	}
 	?>
@@ -323,12 +323,8 @@ function mostrarCarrito($conn, $arr)
 				<button type="submit" style="margin:10px" class="btn btn-primary waves-effect waves-dark pull-center">Proceder</button>
 		</div>
 	</div>
-<?php
-	/*echo "<p>i: $i </p>";
-	echo "<br>";
-	print_r($tempArray);
-	echo "<br>";
-	print_r($arr);*/
+	<?php
+	
 
 	$_SESSION["total"] = $total;
 
@@ -356,7 +352,29 @@ function verif_Tarjeta($conn, $num_tarjeta, $titular, $csv, $fecha) {
 	$resultData = mysqli_stmt_get_result($stmt);
 
 	if ($row = mysqli_fetch_assoc($resultData)) {
-		header("location: ../checkout.php?error=none");
+		
+		if ($row["Saldo"] > $_SESSION["total"]) {
+			
+			$total = $_SESSION["total"]; 
+			
+			$updateTarjeta = "UPDATE Tarjetas SET Saldo -= $total WHERE ID = $num_tarjeta"; 
+			
+			do {
+				select * from Ordenes where ID = $i;
+				
+				row 
+			}
+			while (row == false);
+			
+			$CreateOrden; 
+			$CreateOrdenesEsp; 
+			
+			header("location: ../checkout.php?error=none");
+		}
+		else {
+			header("location: ../checkout.php?error=NoMoney");
+		}
+		
 		exit();
 	} else {
 		$result = false;
