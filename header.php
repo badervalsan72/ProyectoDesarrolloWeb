@@ -8,7 +8,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.php"><i class="icon-info-blocks material-icons">location_on</i>Panadería ULACIT</a>
+                    <a class="navbar-brand" href="index.php"><i class="icon-info-blocks material-icons">location_on</i>Panadería La Grieguita</a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
