@@ -50,6 +50,7 @@
 								$total = mostrarCarrito($conn, $_SESSION['productList']);
 							} else {
 								header("location: order.php?error=NoProductList"); //Si comento esto, sale el boton que de otra forma no sale
+								exit();
 							}
 							?>
 						</div>

@@ -247,10 +247,10 @@ function mostrarCarrito($conn, $arr)
 	// $tempArray2 = $tempArray; 
 	$total = 0;  // la función retorna este valor.
 
-	require_once "includes/cart-inc.php"; 
+	require_once "includes/cart-inc.php";
 
 	for ($i = 1; $i < sizeof($tempArray); $i++) {
-		
+
 		$id = $tempArray[$i];
 		if ($id > 0) {
 			$sql = "SELECT * FROM Productos where ID=$id";
@@ -260,13 +260,12 @@ function mostrarCarrito($conn, $arr)
 			$row = mysqli_fetch_assoc($result); // si falla, poner dentro de while
 
 			// hay un problema con la lógica, el problema está en el for externo y el cómo aumenta i y disminuye el sizeof
-			
-			if (isset($_POST['eliminar' . $row["ID"]])) {				
-				eliminar($i); 
-				echo "<p> HOLA </p>"; 
-			}
-			else {
-				echo "<p> ADIOS </p>"; 
+
+			if (isset($_POST['eliminar' . $row["ID"]])) {
+				eliminar($i);
+				echo "<p> HOLA </p>";
+			} else {
+				echo "<p> ADIOS </p>";
 			}
 		?>
 			<form action="" method="POST" novalidate>
@@ -302,42 +301,54 @@ function mostrarCarrito($conn, $arr)
 								?>
 								<p><?php echo "Cantidad seleccionada: " . $cantidadProducto ?></p>
 								<p><?php echo "Subtotal: ₡" . $subtotal ?></p>
-								<button 
-								type="submit" 
-								style="margin:10px;" 
-								class="btn btn-primary waves-effect waves-dark pull-center"
-								name="<?php echo "eliminar" . $row["ID"] ?>"
-								id="<?php echo "eliminar" . $row["ID"]?>"
-								>
-								Eliminar
+								<button type="submit" style="margin:10px;" class="btn btn-primary waves-effect waves-dark pull-center" name="<?php echo "eliminar" . $row["ID"] ?>" id="<?php echo "eliminar" . $row["ID"] ?>">
+									Eliminar
 								</button>
 							</div>
 						</div>
 					</div>
 				</div>
 			</form>
-				
-			<?php
+
+	<?php
 		}
 	}
-		?>
-		<div class="col-md-4" style="background-color: #de8c63">
-			<div class="about-text">
-				<h3 style="color: white;">Resumen</h3>
+	?>
+	<div class="col-md-4" style="background-color: #de8c63">
+		<div class="about-text">
+			<h3 style="color: white;">Resumen</h3>
+			<hr style="border-color: white">
+			<h5 style="color: white;">Total: <?php echo $total ?></h4>
 				<hr style="border-color: white">
-				<h5 style="color: white;">Total: <?php echo $total ?></h4>
-					<hr style="border-color: white">
-					<button type="submit" style="margin:10px" class="btn btn-primary waves-effect waves-dark pull-center">Proceder</button>
-			</div>
+				<button type="submit" style="margin:10px" class="btn btn-primary waves-effect waves-dark pull-center">Proceder</button>
 		</div>
-	<?php
+	</div>
+<?php
 	/*echo "<p>i: $i </p>";
 	echo "<br>";
 	print_r($tempArray);
 	echo "<br>";
 	print_r($arr);*/
 
+	$_SESSION["total"] = $total;
+
 	mysqli_close($conn);
 	exit();
 	return $total;
+}
+
+function verif_Tarjeta($conn, $num_tarjeta, $titular, $csv, $fecha)
+{
+	$sql = "SELECT * FROM Tarjetas where ID = $num_tarjeta AND TITULAR = $titular AND CSV = $csv AND FECHAVENCIMIENTO = $fecha";
+
+	$result = mysqli_query($conn, $sql);
+
+	if (mysqli_num_rows($result) > 0) {
+		header("location: ../checkout.php?error=gg");
+	} else {
+		header("location: ../checkout.php?error=invalidCard" . $result);
+		exit();
+	}
+	mysqli_close($conn);
+	exit();
 }

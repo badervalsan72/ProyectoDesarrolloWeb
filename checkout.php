@@ -95,6 +95,17 @@
 					</div>
 			</form>
 		</section>
+		<?php
+		if (isset($_GET["error"])) {
+		switch($_GET["error"]) {
+			case "invalidCard":
+				echo "<script type='text/javascript'>alert('Su tarjeta no es válida!');</script>";
+				break;
+			default:
+				break;
+			}
+		}
+		?>
 
 		<a href="#" class="scrollup waves-effect waves-dark"><i class="fa fa-angle-up active"></i></a>
 		<!-- javascript
