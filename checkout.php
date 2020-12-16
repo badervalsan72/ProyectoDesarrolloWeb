@@ -101,6 +101,12 @@
 			case "invalidCard":
 				echo "<script type='text/javascript'>alert('Su tarjeta no es válida!');</script>";
 				break;
+			
+			case "TransaccionExitosa": 
+				echo "<script type='text/javascript'>alert('TRANSACCION EXITOSA!');</script>";
+			
+			case "NoMoney":
+				echo "<script type='text/javascript'>alert('Saldo Insuficiente');</script>";
 			default:
 				break;
 			}

@@ -369,19 +369,20 @@ function verif_Tarjeta($conn, $num_tarjeta, $titular, $csv, $fecha)
 				$resultTempQuery = mysqli_query($conn, $tempQuery);
 
 				if (mysqli_num_rows($resultTempQuery) == 0) {
-					$CreateOrdenQuery = "INSERT INTO Ordenes (ID, IDUsuario, Fecha, EstadoEntrega) VALUES (?, ?, ?, ?); ";
+					$CreateOrdenQuery = "INSERT INTO Ordenes (ID, CorreoUsuario, Fecha, EstadoEntrega) VALUES (?, ?, ?, ?); ";
 					
 					if (!mysqli_stmt_prepare($stmt2, $CreateOrdenQuery)) {
 						header("location: ../checkout.php?error=stmtfailedCreateOrder");
 						exit();
 					}
+					$email = $_SESSION["email"]; 
+					$currentDateTime = date('Y-m-d');
+					$zero = 0; 
+					mysqli_stmt_bind_param($stmt2, "issi", $i, $email, $currentDateTime, $zero); 
+					mysqli_stmt_execute($stmt2);
+					mysqli_stmt_close($stmt2);
 					
-					mysqli_stmt_bind_param($stmt2, "iisi", $i, $_SESSION["id"], $descripcion, $costo, $razonCompra, $estado);
-					mysqli_stmt_execute($stmt);
-					mysqli_stmt_close($stmt);
-					mysqli_close($conn);
-					
-					
+					// exit(); 					
 				}
 				else {
 					$i++; 
@@ -389,10 +390,42 @@ function verif_Tarjeta($conn, $num_tarjeta, $titular, $csv, $fecha)
 			}
 			while (mysqli_num_rows($resultTempQuery) == 0);
 			
+			$stmt3 = mysqli_stmt_init($conn);
+			$products = $_SESSION["productList"]; 
+			for ($x = 1; $x < sizeof($products); $x++) {
+				
+				$idProducto = $products[$x];
+				if ($idProducto > 0) {
+
+					$cantidadProductoOE = 0;
+
+					for ($z = 1; $z < sizeof($products); $z++) {
+						$zd = $products[$z];
+						if ($idProducto == $zd) {
+							
+							$products[$z] = 0;
+							$cantidadProductoOE++;
+						}
+					}
+					$insertOrdenEsp = "INSERT INTO OrdenEsp (IDOrden, IDProducto, Cantidad) VALUES (?, ?, ?);"; 
+
+					
+					if (!mysqli_stmt_prepare($stmt3, $insertOrdenEsp)) {
+						header("location: ../login.php?error=stmtfailedInsertOrdenEsp");
+						exit();
+					}
+					$IDORden = $i . $x; 
+					mysqli_stmt_bind_param($stmt3, "iii", $IDORden, $idProducto, $cantidadProductoOE);
+					mysqli_stmt_execute($stmt3);
+					mysqli_stmt_close($stmt3);
+					header("location: ../checkout.php?error=ProductosAgregadosAOrdenEspecial");
+					exit();
+
+				} 
 			 
-			$CreateOrdenesEspQuery; 
 			
-			header("location: ../checkout.php?error=none");
+			}
+			header("location: ../checkout.php?error=TransaccionExitosa");
 		}
 		else {
 			header("location: ../checkout.php?error=NoMoney");
@@ -405,4 +438,5 @@ function verif_Tarjeta($conn, $num_tarjeta, $titular, $csv, $fecha)
 		exit();
 	}
 	mysqli_stmt_close($stmt);
+	mysqli_close($conn);
 }
