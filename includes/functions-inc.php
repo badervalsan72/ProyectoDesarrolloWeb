@@ -337,18 +337,32 @@ function mostrarCarrito($conn, $arr)
 	return $total;
 }
 
-function verif_Tarjeta($conn, $num_tarjeta, $titular, $csv, $fecha)
-{
-	$sql = "SELECT * FROM Tarjetas where ID = $num_tarjeta AND TITULAR = $titular AND CSV = $csv AND FECHAVENCIMIENTO = $fecha";
 
-	$result = mysqli_query($conn, $sql);
-
-	if (mysqli_num_rows($result) > 0) {
-		header("location: ../checkout.php?error=gg");
-	} else {
-		header("location: ../checkout.php?error=invalidCard" . $result);
+function verif_Tarjeta($conn, $num_tarjeta, $titular, $csv, $fecha) {
+	// $sql = "SELECT * FROM Usuarios WHERE Correo = ?;";
+	$sql = "SELECT * FROM Tarjetas where ID = ? AND TITULAR = ? AND CSV = ? AND FECHAVENCIMIENTO = ?";
+	
+	$stmt = mysqli_stmt_init($conn);
+	
+	if (!mysqli_stmt_prepare($stmt, $sql)) {
+		header("location: ../checkout.php?error=stmtfailedforCard");
 		exit();
 	}
-	mysqli_close($conn);
-	exit();
+
+	mysqli_stmt_bind_param($stmt, "isis", $num_tarjeta, $titular, $csv, $fecha);
+	mysqli_stmt_execute($stmt);
+
+	
+	$resultData = mysqli_stmt_get_result($stmt);
+
+	if ($row = mysqli_fetch_assoc($resultData)) {
+		header("location: ../checkout.php?error=none");
+		exit();
+	} else {
+		$result = false;
+		header("location: ../checkout.php?error=invalidCard");
+		exit();
+	}
+
+	mysqli_stmt_close($stmt);
 }
