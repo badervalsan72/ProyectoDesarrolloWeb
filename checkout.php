@@ -56,43 +56,43 @@
 							<div id="test1" class="col s12 container ">
 								<div class="col-md-6">
 									<div class="input-field">
-										<input type="text" class="form-control" id="user" name="name_signup" required data-validation-required-message="Por favor introduzca su direccion exacta" />
+										<input type="text" class="form-control" id="user" name="direccion-checkout" required data-validation-required-message="Por favor introduzca su direccion exacta" />
 										<label for="user" class=""> Dirección Exacta </label>
 									</div>
 									<div class="input-field">
-										<input type="number" class="form-control" id="apellido1" name="apellido1_signup" required data-validation-required-message="Por favor introduzca su numero de teléfono" />
+										<input type="number" class="form-control" id="apellido1" name="telefono-checkout" required data-validation-required-message="Por favor introduzca su numero de teléfono" />
 										<label for="user" class=""> Número de teléfono </label>
 									</div>
 									<div class="input-field">
-										<input type="email" class="form-control" id="email2" name="email_signup" required data-validation-required-message="Por favos introduzca su correo" />
+										<input type="email" class="form-control" id="email2" name="email-checkout" required data-validation-required-message="Por favos introduzca su correo" />
 										<label for="email2" class=""> Correo Electrónico </label>
 									</div>
 								</div>
 							</div>
 							<div id="test2" class="col s12 container">
-								<div class="col-md-6">
+								<div class="col-md-10">
 									<div class="input-field">
-										<input type="text" class="form-control" id="user" name="name_signup" required data-validation-required-message="Por favor introduzca el nombre del titular" />
+										<input type="text" class="form-control" id="user" name="name-checkout" required data-validation-required-message="Por favor introduzca el nombre del titular" />
 										<label for="user" class=""> Nombre del titular de la tarjeta</label>
 									</div>
 									<div class="input-field">
-										<input type="number" class="form-control" id="apellido1" name="apellido1_signup" required data-validation-required-message="Por favor introduzca su número de tarjeta" />
+										<input type="number" class="form-control" id="apellido1" name="numero-checkout" required data-validation-required-message="Por favor introduzca su número de tarjeta" />
 										<label for="user" class=""> Número de la tarjeta</label>
 									</div>
 									<div class="input-field">
-										<input type="number" class="form-control" id="apellido2" name="apellido2_signup" required data-validation-required-message="Por favor introduzca el código de seguridad" />
+										<input type="number" class="form-control" id="apellido2" name="csv-checkout" required data-validation-required-message="Por favor introduzca el código de seguridad" />
 										<label for="user" class=""> Código de seguridad </label>
 									</div>
-									
-									<div class="input-field">										
-										<input type="date" class="form-control" id="date" name="dateCard" required data-validation-required-message="Por favor introduzca la fecha de expiración" />
-										<label for="user" class=""> Fecha de expiración </label> 
+
+									<div class="input-field">
+										<input type="date" class="form-control" id="date" name="date-checkout" required data-validation-required-message="Por favor introduzca la fecha de expiración" />
+										<label for="user" class=""></label>
 									</div>
 								</div>
 							</div>
-							<!-- <div id="test3" class="col s12 container">
-						<button type="submit" name="submit" class="btn btn-primary waves-effect waves-dark pull-center">Completar</button>
-					</div> -->
+							<div id="test3" class="col s12 container">
+								<button type="submit" name="submit" class="btn btn-primary waves-effect waves-dark pull-center">Completar</button>
+							</div>
 						</div>
 					</div>
 				</div>

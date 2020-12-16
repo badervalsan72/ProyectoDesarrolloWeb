@@ -304,7 +304,7 @@ function mostrarCarrito($conn, $arr) {
 								$jd = $tempArray[$j];
 								if ($id == $jd) {
 									// echo "<p> $id es igual a $jd </p>";
-									// echo "<p> cambiando $tempArray[$j] a 0 </p>";
+									// |echo "<p> cambiando $tempArray[$j] a 0 </p>";
 									$tempArray[$j] = 0; 
 									$cantidadProducto++;
 								}							
