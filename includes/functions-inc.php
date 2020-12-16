@@ -314,11 +314,11 @@ function mostrarCarrito($conn, $arr)
 		}
 	}
 	?>
-	<div class="col-md-4" style="background-color: #de8c63">
+	<div class="col-md-4" style="background-color: #de8c63; display:flex; justify-content: center">
 		<div class="about-text">
 			<h3 style="color: white;">Resumen</h3>
 			<hr style="border-color: white">
-			<h5 style="color: white;">Total: <?php echo $total ?></h4>
+			<h5 style="color: white;">Total: ₡<?php echo $total ?></h4>
 				<hr style="border-color: white">
 				<form action="checkout.php">
 					<button type="submit" style="margin:10px" class="btn btn-primary waves-effect waves-dark pull-center">Proceder</button>
@@ -335,7 +335,7 @@ function mostrarCarrito($conn, $arr)
 	return $total;
 }
 
-/*function verif_Tarjeta($conn, $num_tarjeta, $titular, $csv, $fecha)
+function verif_Tarjeta($conn, $num_tarjeta, $titular, $csv, $fecha)
 {
 	// $sql = "SELECT * FROM Usuarios WHERE Correo = ?;";
 	$sql = "SELECT * FROM Tarjetas where ID = ? AND TITULAR = ? AND CSV = ? AND FECHAVENCIMIENTO = ?";
