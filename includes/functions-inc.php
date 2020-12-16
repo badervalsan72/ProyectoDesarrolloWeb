@@ -263,7 +263,8 @@ function mostrarCarrito($conn, $arr)
 
 			if (isset($_POST['eliminar' . $row["ID"]])) {
 				eliminar($i);
-				
+				//unset($_POST); ERROR QUE BORRA INFINITAMENTE EL OBJETO DE LA LISTA HASTA QUE SEA 0
+				// Y SIN INTERACCION DEL USUARIO
 			} else {
 				
 			}
@@ -369,7 +370,6 @@ function verif_Tarjeta($conn, $num_tarjeta, $titular, $csv, $fecha)
 			do {
 				$tempQuery = "SELECT * FROM Ordenes WHERE ID = $i" ;
 				$resultTempQuery = mysqli_query($conn, $tempQuery);
-
 				if (mysqli_num_rows($resultTempQuery) == 0) {
 					$CreateOrdenQuery = "INSERT INTO Ordenes (ID, CorreoUsuario, Fecha, EstadoEntrega) VALUES (?, ?, ?, ?); ";
 					
@@ -420,7 +420,7 @@ function verif_Tarjeta($conn, $num_tarjeta, $titular, $csv, $fecha)
 					mysqli_stmt_bind_param($stmt3, "iii", $imenor, $idProducto, $cantidadProductoOE);
 					mysqli_stmt_execute($stmt3);
 					mysqli_stmt_close($stmt3);
-					// header("location: ../checkout.php?error=ProductosAgregadosAOrdenEspecial");
+					//header("location: ../checkout.php?error=ProductosAgregadosAOrdenEspecial");
 					// exit();
 
 				} 
@@ -437,8 +437,9 @@ function verif_Tarjeta($conn, $num_tarjeta, $titular, $csv, $fecha)
 			mysqli_stmt_bind_param($stmtTarjeta, "di", $total, $num_tarjeta);
 			mysqli_stmt_execute($stmtTarjeta);
 			mysqli_stmt_close($stmtTarjeta);
-	
-			header("location: ../checkout.php?error=TransaccionExitosa");
+			unset($_SESSION["productList"]);
+			unset($_SESSION["total"]);
+			header("location: ../index.php?error=TransaccionExitosa");
 			exit();
 		}
 		else {
