@@ -360,16 +360,37 @@ function mostrarCarrito($conn, $arr)
 			$total = $_SESSION["total"]; 
 			
 			$updateTarjeta = "UPDATE Tarjetas SET Saldo -= $total WHERE ID = $num_tarjeta"; 
+			$i = 1;
+
+			$stmt2 = mysqli_stmt_init($conn);
 			
 			do {
-				select * from Ordenes where ID = $i;
-				
-				row 
+				$tempQuery = "SELECT * FROM Ordenes WHERE ID = $i" ;
+				$resultTempQuery = mysqli_query($conn, $tempQuery);
+
+				if (mysqli_num_rows($resultTempQuery) == 0) {
+					$CreateOrdenQuery = "INSERT INTO Ordenes (ID, IDUsuario, Fecha, EstadoEntrega) VALUES (?, ?, ?, ?); ";
+					
+					if (!mysqli_stmt_prepare($stmt2, $CreateOrdenQuery)) {
+						header("location: ../checkout.php?error=stmtfailedCreateOrder");
+						exit();
+					}
+					
+					mysqli_stmt_bind_param($stmt2, "iisi", $i, $_SESSION["id"], $descripcion, $costo, $razonCompra, $estado);
+					mysqli_stmt_execute($stmt);
+					mysqli_stmt_close($stmt);
+					mysqli_close($conn);
+					
+					
+				}
+				else {
+					$i++; 
+				}
 			}
-			while (row == false);
+			while (mysqli_num_rows($resultTempQuery) == 0);
 			
-			$CreateOrden; 
-			$CreateOrdenesEsp; 
+			 
+			$CreateOrdenesEspQuery; 
 			
 			header("location: ../checkout.php?error=none");
 		}

@@ -20,10 +20,10 @@ CREATE TABLE OrdenEsp (
 CREATE TABLE Ordenes (
     ID int NOT NULL,
     -- IDUsuario BIGINT NOT NULL,
-    IDUsuario int NOT NULL,
+    CorreoUsuario varchar(50) NOT NULL,
     Fecha date NOT NULL,
-    EstadoEntrega bit NOT NULL,
-    CONSTRAINT Ordenes_pk PRIMARY KEY (ID)
+    EstadoEntrega int NOT NULL,
+    PRIMARY KEY (ID)
 );
 
 -- Table: Productos
@@ -34,7 +34,7 @@ CREATE TABLE Productos (
     PrecioUnitario int NOT NULL,
     NombreImagen varchar(128) NOT NULL,
     Tipo bit NOT NULL, 
-    CONSTRAINT Productos_pk PRIMARY KEY (ID)
+    PRIMARY KEY (ID)
 );
 
 -- Table: Usuarios
@@ -48,7 +48,8 @@ CREATE TABLE Usuarios (
     Contrasena varchar(128) NOT NULL,
     Descuento int NOT NULL,
     Correo varchar(50) NOT NULL,
-    CONSTRAINT Usuarios_pk PRIMARY KEY (ID)
+    PRIMARY KEY (Correo) 
+    
 );
 
 CREATE TABLE Tarjetas ( 
@@ -57,7 +58,7 @@ CREATE TABLE Tarjetas (
     FechaVencimiento date NOT NULL, 
     CSV int NOT NULL, 
     Saldo float NOT NULL, 
-    CONSTRAINT Tarjetas_pk PRIMARY KEY (ID)
+    PRIMARY KEY (ID)
 ); 
 -- nombre, ap1, ap2, pwd, desc, correo 
  
@@ -71,8 +72,8 @@ ALTER TABLE OrdenEsp ADD CONSTRAINT OrdenEsp_Productos FOREIGN KEY OrdenEsp_Prod
     REFERENCES Productos (ID);
 
 -- Reference: Ordenes_Usuarios (table: Ordenes)
-ALTER TABLE Ordenes ADD CONSTRAINT Ordenes_Usuarios FOREIGN KEY Ordenes_Usuarios (IDUsuario)
-    REFERENCES Usuarios (ID);
+ALTER TABLE Ordenes ADD CONSTRAINT Ordenes_Usuarios FOREIGN KEY Ordenes_Usuarios (CorreoUsuario)
+    REFERENCES Usuarios (Correo);
 
  
 
