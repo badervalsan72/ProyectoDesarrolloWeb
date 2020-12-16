@@ -428,13 +428,13 @@ function verif_Tarjeta($conn, $num_tarjeta, $titular, $csv, $fecha)
 			
 			}
 			
-			$updateTarjeta = "UPDATE Tarjetas SET Saldo -= ? WHERE ID = ?"; 
+			$updateTarjeta = "UPDATE Tarjetas SET Saldo = Saldo - ? WHERE ID = ?"; 
 			$stmtTarjeta = mysqli_stmt_init($conn);
 			if (!mysqli_stmt_prepare($stmtTarjeta, $updateTarjeta)) {
 				header("location: ../checkout.php?error=stmtfailedPagoTarjeta");
 				exit();
 			}
-			mysqli_stmt_bind_param($stmtTarjeta, "ii", $total, $num_tarjeta);
+			mysqli_stmt_bind_param($stmtTarjeta, "di", $total, $num_tarjeta);
 			mysqli_stmt_execute($stmtTarjeta);
 			mysqli_stmt_close($stmtTarjeta);
 	
