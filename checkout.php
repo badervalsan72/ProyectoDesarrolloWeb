@@ -55,7 +55,7 @@
 									</ul>
 								</div>
 								<div id="test1" class="col s12 container ">
-									<div class="col-md-6">
+									<div class="col-md-12">
 										<div class="input-field">
 											<input type="text" class="form-control" id="direccion" name="direccion-checkout" required data-validation-required-message="Por favor introduzca su direccion exacta" />
 											<label for="user" class=""> Dirección Exacta </label>
@@ -67,7 +67,7 @@
 									</div>
 								</div>
 								<div id="test2" class="col s12 container">
-									<div class="col-md-10">
+									<div class="col-md-12">
 										<div class="input-field">
 											<input type="text" class="form-control" id="titular" name="name-checkout" required data-validation-required-message="Por favor introduzca el nombre del titular" />
 											<label for="user" class=""> Nombre del titular de la tarjeta</label>
