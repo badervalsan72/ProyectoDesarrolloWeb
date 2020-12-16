@@ -39,63 +39,61 @@
 			</div>
 		</section>
 		<section id="content">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 text-center">
-						<div class="block-heading-two">
-							<h3><span>Pasos para completar orden:</span></h3>
-						</div>
-						<div class="tab-section">
-							<div class="s12">
-								<ul class="tabs">
-									<li class="tab col s6"><a href="#test2" class="waves-effect waves-dark active">Método de pago</a></li>
-									<li class="tab col s6"><a href="#test1" class="waves-effect waves-dark">Direccion de entrega</a></li>
-									<!-- <li class="tab col s4"><a href="#test3" class="waves-effect waves-dark">Confirmación</a></li>  -->
-								</ul>
+			<form action="includes/checkout-inc.php" method="POST" name="sentMessage" id="contactForm" novalidate>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<div class="block-heading-two">
+								<h3><span>Pasos para completar orden:</span></h3>
 							</div>
-							<div id="test1" class="col s12 container ">
-								<div class="col-md-6">
-									<div class="input-field">
-										<input type="text" class="form-control" id="user" name="direccion-checkout" required data-validation-required-message="Por favor introduzca su direccion exacta" />
-										<label for="user" class=""> Dirección Exacta </label>
-									</div>
-									<div class="input-field">
-										<input type="number" class="form-control" id="apellido1" name="telefono-checkout" required data-validation-required-message="Por favor introduzca su numero de teléfono" />
-										<label for="user" class=""> Número de teléfono </label>
-									</div>
-									<div class="input-field">
-										<input type="email" class="form-control" id="email2" name="email-checkout" required data-validation-required-message="Por favos introduzca su correo" />
-										<label for="email2" class=""> Correo Electrónico </label>
+							<div class="tab-section">
+								<div class="s12">
+									<ul class="tabs">
+										<li class="tab col s6"><a href="#test2" class="waves-effect waves-dark active">Método de pago</a></li>
+										<li class="tab col s6"><a href="#test1" class="waves-effect waves-dark">Direccion de entrega</a></li>
+										<!-- <li class="tab col s4"><a href="#test3" class="waves-effect waves-dark">Confirmación</a></li>  -->
+									</ul>
+								</div>
+								<div id="test1" class="col s12 container ">
+									<div class="col-md-6">
+										<div class="input-field">
+											<input type="text" class="form-control" id="direccion" name="direccion-checkout" required data-validation-required-message="Por favor introduzca su direccion exacta" />
+											<label for="user" class=""> Dirección Exacta </label>
+										</div>
+										<div class="input-field">
+											<input type="number" class="form-control" id="telefono" name="telefono-checkout" required data-validation-required-message="Por favor introduzca su numero de teléfono" />
+											<label for="user" class=""> Número de teléfono </label>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div id="test2" class="col s12 container">
-								<div class="col-md-10">
-									<div class="input-field">
-										<input type="text" class="form-control" id="user" name="name-checkout" required data-validation-required-message="Por favor introduzca el nombre del titular" />
-										<label for="user" class=""> Nombre del titular de la tarjeta</label>
-									</div>
-									<div class="input-field">
-										<input type="number" class="form-control" id="apellido1" name="numero-checkout" required data-validation-required-message="Por favor introduzca su número de tarjeta" />
-										<label for="user" class=""> Número de la tarjeta</label>
-									</div>
-									<div class="input-field">
-										<input type="number" class="form-control" id="apellido2" name="csv-checkout" required data-validation-required-message="Por favor introduzca el código de seguridad" />
-										<label for="user" class=""> Código de seguridad </label>
-									</div>
+								<div id="test2" class="col s12 container">
+									<div class="col-md-10">
+										<div class="input-field">
+											<input type="text" class="form-control" id="titular" name="name-checkout" required data-validation-required-message="Por favor introduzca el nombre del titular" />
+											<label for="user" class=""> Nombre del titular de la tarjeta</label>
+										</div>
+										<div class="input-field">
+											<input type="number" class="form-control" id="numero" name="numero-checkout" required data-validation-required-message="Por favor introduzca su número de tarjeta" />
+											<label for="user" class=""> Número de la tarjeta</label>
+										</div>
+										<div class="input-field">
+											<input type="number" class="form-control" id="csv" name="csv-checkout" required data-validation-required-message="Por favor introduzca el código de seguridad" />
+											<label for="user" class=""> Código de seguridad </label>
+										</div>
 
-									<div class="input-field">
-										<input type="date" class="form-control" id="date" name="date-checkout" required data-validation-required-message="Por favor introduzca la fecha de expiración" />
-										<label for="user" class=""></label>
+										<div class="input-field">
+											<input type="date" class="form-control" id="date" name="date-checkout" required data-validation-required-message="Por favor introduzca la fecha de expiración" />
+											<label for="user" class=""></label>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div id="test3" class="col s12 container">
-								<button type="submit" name="submit" class="btn btn-primary waves-effect waves-dark pull-center">Completar</button>
+								<div id="test3" class="col s12 container">
+									<button type="submit" name="submit" class="btn btn-primary waves-effect waves-dark pull-center">Completar</button>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
+			</form>
 		</section>
 
 		<a href="#" class="scrollup waves-effect waves-dark"><i class="fa fa-angle-up active"></i></a>
