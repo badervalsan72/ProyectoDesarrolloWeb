@@ -9,11 +9,11 @@ DROP TABLE Tarjetas;
 -- tables
 -- Table: OrdenEsp
 CREATE TABLE OrdenEsp (
-    ID int NOT NULL,
+    ID int NOT NULL AUTO_INCREMENT,
     IDOrden int NOT NULL,
     IDProducto int NOT NULL,
     Cantidad int NOT NULL,
-    CONSTRAINT OrdenEsp_pk PRIMARY KEY (ID)
+    PRIMARY KEY (ID)
 );
 
 -- Table: Ordenes
