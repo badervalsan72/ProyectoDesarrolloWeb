@@ -238,75 +238,91 @@ function mostrarProductos($conn)
 	exit(); 	*/
 }
 
-function mostrarCarrito($conn, $arr)
-{
+function mostrarCarrito($conn, $arr) {
 	// session_start();
 
 	// echo "<p> $result </p>";
 	$tempArray = $arr;
+	// $tempArray2 = $tempArray; 
 	$total = 0;  // la función retorna este valor.
-	//print_r($tempArray);
+	
 
 
-	//for ($i = 1; $i < sizeof($tempArray); $i++) { ***NO SIRVE***
-	$i = 1;
-	while (sizeof($tempArray) > 1) {
-
+	for ($i = 1; $i < sizeof($tempArray); $i++) {
+		// $i = 1; 
+		// while (sizeof($tempArray) > 1) {
+		// print_r($tempArray);
 		$id = $tempArray[$i];
+		if ($id > 0) {
+			$sql = "SELECT * FROM Productos where ID=$id";
 
-		$sql = "SELECT * FROM Productos where ID=$id";
+			$result = mysqli_query($conn, $sql);
 
-		$result = mysqli_query($conn, $sql);
+			$row = mysqli_fetch_assoc($result); // si falla, poner dentro de while
 
-		$row = mysqli_fetch_assoc($result); // si falla, poner dentro de while
-
-		// hay un problema con la lógica, el problema está en el for externo y el cómo aumenta i y disminuye el sizeof
-		?>
-		<!-- Accordion starts -->
-		<div class="panel-group" id="accordion-alt3">
-			<!-- Panel body -->
-			<div class="panel-body">
-				<div class="col-md-6">
-					<div class="col-md-8">
-						<div class="gallery-item">
-							<div class="gallery-thumb">
-								<img src="<?php echo $row["NombreImagen"] ?>" class="img-responsive" alt="1st gallery Thumb">
+			// hay un problema con la lógica, el problema está en el for externo y el cómo aumenta i y disminuye el sizeof
+			?>
+			<!-- Accordion starts -->
+			<div class="panel-group" id="accordion-alt3">
+				<!-- Panel body -->
+				<div class="panel-body">
+					<div class="col-md-6">
+						<div class="col-md-8">
+							<div class="gallery-item">
+								<div class="gallery-thumb">
+									<img src="<?php echo $row["NombreImagen"] ?>" class="img-responsive" alt="1st gallery Thumb">
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-md-4" style="float: right;">
-						<h5><?php echo $row["Nombre"] ?> </h5>
-						<p><?php echo "Precio Unitario: ₡", $row["PrecioUnitario"] ?></p>
+						<div class="col-md-4" style="float: right;">
+							<h5><?php echo $row["Nombre"] ?> </h5>
+							<p><?php echo "Precio Unitario: ₡", $row["PrecioUnitario"] ?></p>
 
-						<?php
-						$cantidadProducto = 0;
+							<?php
+							$cantidadProducto = 0;
 
-						for ($j = 1; $j < sizeof($arr); $j++) {
+							
+							/*for ($j = 1; $j < sizeof($tempArray2); $j++) {
+								// $j = 1; 
+								// while (sizeof($tempArray2) > 1) {
+								$jd = $tempArray2[$j];
 
-							$jd = $arr[$j];
-
-							if ($id == $jd) {
-								$cantidadProducto++;
-								array_splice($tempArray, $i, 1); // aquí tiene que estar el error
-								//echo "<p> $id es igual a $jd </p>";
-								//echo "<p> borrando $tempArray[$j] </p>";
-								//unset($tempArray[$j]);
-							} else {
-								//echo "<p> $id no es igual a $jd </p>";
+								if ($id == $jd) {
+									$cantidadProducto++;
+									$tempArray2[$j] = 0; 
+									array_splice($tempArray, $j, 1);
+									// aquí tiene que estar el error
+									// echo "<p> $id es igual a $jd </p>";
+									//echo "<p> borrando $tempArray[$j] </p>";
+									//unset($tempArray[$j]);
+								} else {
+									
+									//echo "<p> $id no es igual a $jd </p>";
+								}
+							}*/ 
+							for ($j = 1; $j < sizeof($tempArray); $j++) {
+								$jd = $tempArray[$j];
+								if ($id == $jd) {
+									// echo "<p> $id es igual a $jd </p>";
+									// echo "<p> cambiando $tempArray[$j] a 0 </p>";
+									$tempArray[$j] = 0; 
+									$cantidadProducto++;
+								}							
+							
 							}
-						}
-						$subtotal = $row["PrecioUnitario"] * $cantidadProducto;
-						$total += $subtotal;
-						?>
-						<p><?php echo "Cantidad seleccionada: " . $cantidadProducto ?></p>
-						<p><?php echo "Subtotal: ₡" . $subtotal ?></p>
-						<button type="submit" style="margin:10px;" class="btn btn-primary waves-effect waves-dark pull-center">Eliminar</button>
+							$subtotal = $row["PrecioUnitario"] * $cantidadProducto;
+							$total += $subtotal;
+							?>
+							<p><?php echo "Cantidad seleccionada: " . $cantidadProducto ?></p>
+							<p><?php echo "Subtotal: ₡" . $subtotal ?></p>
+							<button type="submit" style="margin:10px;" class="btn btn-primary waves-effect waves-dark pull-center">Eliminar</button>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<!--<hr style="border-color: black;">-->
-	<?php
+			<!--<hr style="border-color: black;">-->
+			<?php
+		}
 	}
 	?>
 	<div class="col-md-4" style="background-color: #de8c63">
@@ -318,7 +334,7 @@ function mostrarCarrito($conn, $arr)
 				<button type="submit" style="margin:10px" class="btn btn-primary waves-effect waves-dark pull-center">Proceder</button>
 		</div>
 	</div>
-<?php
+	<?php
 	/*echo "<p>i: $i </p>";
 	echo "<br>";
 	print_r($tempArray);
